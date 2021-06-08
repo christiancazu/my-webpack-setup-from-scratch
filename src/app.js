@@ -1,121 +1,74 @@
 /* eslint-disable no-unused-vars */
 // import '@/css/app.scss';
+// private readonly endPoint: string = "https://api.paycomet.com/gateway/xml-bankstore?wsdl";
+//     private readonly endPointUrl: string = "https://api.paycomet.com/gateway/ifr-bankstore?";
 
-import es from './es/index';
-import fr from './fr/index';
-const sortKeysRecursive = require('sort-keys-recursive');
+import axios from 'axios';
 
-function findKeys (mainObj, alterObj) {
-  Object.keys(mainObj).forEach(key => {
-    if (typeof mainObj[key] === 'object') {
-      if (!alterObj[key]) {
-        alterObj[key] = JSON.parse(JSON.stringify(mainObj[key]));
-        for (const o of Object.keys(alterObj[key])) {
-          console.warn('compare', mainObj[key][o], alterObj[key][o], typeof alterObj[key][o]);
-          if (mainObj[key][o] === alterObj[key][o]) {
-            alterObj[key][o] = 'TODO: TRANSLATION';
-          } else if (typeof mainObj[key][o] === 'object') {
-            //
-            const assignTodo = (object) => {
-              console.error('comes', object);
-              for (const y of Object.keys(object)) {
-                if (typeof object[y] === 'string') {
-                  object[y] = 'TODO: TRANSLATION';
-                } else {
-                  object[y] = assignTodo(object[y]);
-                  console.warn('myojbect', object[y]);
-                };
-              }
-              return object;
-            };
+const data = '{\n    "terminal": 34076758,\n    "cvc2": "012",\n    "jetToken": "rApGWqLdH8ExOyNiLukyMMs78PZRzDm5",\n    "expiryYear": "23",\n    "expiryMonth": "11",\n    "pan": "eu consectetur",\n    "order": "PAY987654321",\n    "productDescription": "Random product",\n    "language": "fr",\n    "notify": 1\n}';
 
-            alterObj[key][o] = assignTodo(mainObj[key][o]);
-
-            // console.error(key, o, mainObj[key][o]);
-            // return findKeys(mainObj[key][o], alterObj[key][o]);
-          }
-        }
-      } else {
-        return findKeys(mainObj[key], alterObj[key]);
-      }
-    }
-
-    if (!alterObj[key]) {
-      alterObj[key] = 'TODO: TRANSLATION';
-    }
-  });
-
-  return {
-    mainObj,
-    alterObj
-  };
-}
-
-const { mainObj, alterObj } = findKeys({ es }, { es: fr });
-const pre = document.createElement('pre');
-pre.textContent = JSON.stringify(alterObj, undefined, 2);
-document.body.appendChild(pre);
-
-// console.warn(sortKeysRecursive(alterObj));
-// console.warn(Object.keys(alterObj).sort());
-
-const a = document.createElement('a');
-a.href = 'data:application/octet-stream,' + encodeURIComponent(JSON.stringify(sortKeysRecursive(es)));
-a.download = 'es.json';
-a.click();
-
-// espect
-const espect = {
-  centers: {
-    edit: '',
-    create: '',
-    user: {
-      account: ''
-    },
-    trade: ''
-
+const config = {
+  method: 'post',
+  url: 'https://rest.paycomet.com/v1/cards',
+  headers: {
+    'Content-Type': 'application/json',
+    Accept: 'application/json',
+    'PAYCOMET-API-TOKEN': '64213a07d21e22e47db6566e6cda659cf4860440'
+  },
+  data: {
+    terminal: 34076758,
+    cvc2: '012',
+    jetToken: 'rApGWqLdH8ExOyNiLukyMMs78PZRzDm5',
+    expiryYear: '23',
+    expiryMonth: '11',
+    pan: 'eu consectetur',
+    order: 'PAY987654321',
+    productDescription: 'Random product',
+    language: 'fr',
+    notify: 1
   }
 };
 
-// function findKeys (mainObj, alterObj) {
-//   return Object.keys(mainObj).reduce((acc, key) => {
-//     console.warn('mainObj', mainObj);
-//     console.log('alterObj', alterObj);
-//     console.warn('compares', key);
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
 
-//     // acc = findKeys(mainObj[key], {});
+// Instancia para cosumir la mayoria los servicios
+// const axiosInstance = axios.create({
+//   // baseURL: 'https://rest.paycomet.com',
+//   headers: {
+//     Accept: 'application/json',
+//     'Content-Type': 'application/json',
+//     'PAYCOMET-API-TOKEN': '64213a07d21e22e47db6566e6cda659cf4860440'
+//   }
+// });
 
-//     if (typeof mainObj[key] === 'object') {
-//       console.warn('object', key);
-//       findKeys(mainObj[key], alterObj[key] ?? {});
-//       // console.log(typeof mainObj[key] === 'object');
-//       // acc = findKeys(mainObj[key], alterObj[key] ?? acc);
-//     }
-//     if (!alterObj[key]) {
-//       // console.log('key', key);
-//       acc[key] = '';
-//     }
+// async function apiPayComet () {
+//   try {
+//     await axiosInstance.get('https://rest.paycomet.com');
+//   } catch (error) {
 
-//     // console.log('acc', acc);
-//     return acc;
-//   }, {});
+//   }
 // }
 
-// const indexedDB = window.indexedDB;
+// apiPayComet();
 
-// if (indexedDB) {
-//   let db = null;
-//   const request = indexedDB.open('test', 1);
+// const PaycometRestApi = require('paycomet_rest_api');
 
-//   request.onsuccess = () => {
-//     console.warn('SUCCESS');
-//   };
-
-//   request.onupgradeneeded = () => {
-//     // eslint-disable-next-line no-unused-vars
-//     db = request.result;
-//     const createObjectStore = db.createObjectStore('tasks');
-//     createObjectStore.add(true, 'val');
-//     console.warn('ON CREATED');
-//   };
-// }
+// const api = new PaycometRestApi.BalanceApi();
+// const opts = {
+//   body: {},
+//   pAYCOMETAPITOKEN: '64213a07d21e22e47db6566e6cda659cf4860440' // {{String}} PAYCOMET API key (Query privilege required)
+// };
+// const callback = function (error, data, response) {
+//   if (error) {
+//     console.error(error);
+//   } else {
+//     console.log('API called successfully. Returned data: ' + data);
+//   }
+// };
+// api.productBalance(opts, callback);
