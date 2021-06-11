@@ -1,1454 +1,451 @@
 export default {
-  account: {
-    bank: 'Cuenta bancaria',
-    create: 'Crear una cuenta',
-    create_company: 'Crear cuenta empresa',
-    create_freelance: 'Crear cuenta autónomo',
-    already: 'Ya tengo una cuenta?',
-    tell_us_type: 'dinos que tipo de cuenta quieres:',
-    contact: 'Nombre persona contacto',
-    error: 'No ha sido posible {action} la cuenta',
-    success: 'La cuenta se ha {action} correctamente'
+  nav: {
+    advantages: 'Ventajas',
+    useCases: 'Casos de uso',
+    pricing: 'Precios',
+    tryNow: 'Probar ahora',
+    login: 'Acceder'
   },
-  accept_terms:
-    'Acepto los Términos de servicio de Flux, incluido el Acuerdo de usuario y la Política de privacidad.',
-  active_plans: 'Planes activos',
-  activated: 'activado',
-  adaptations: {
-    num: 'Adaptación|Adaptaciones',
-    format: 'Adaptaciones a diferentes formatos de pantalla',
-    format_description: 'Adaptación de los videos en los diferentes mosaicos preestablecidos'
-  },
-  adjust_image: 'Ajustar imagen',
-  audio_languages: {
-    num: 'Idioma del Audio|Idiomas de Audios',
-    German: 'Alemán',
-    Aranes: 'Aranés',
-    Spanish: 'Castellano',
-    Catalan: 'Catalán',
-    Euskera: 'Euskera',
-    French: 'Francés',
-    Gallego: 'Gallego',
-    English: 'Inglés',
-    Mallorquin: 'Mallorquín',
-    Portuguese: 'Portugués',
-    Valenciano: 'Valenciano'
-  },
-  announcements: {
-    num: 'Aviso|Avisos',
-    create: 'Crear aviso',
-    edit: 'Editar aviso',
-    assign: 'Asignar aviso',
-    information: 'Información del aviso',
-    assign_to_centers_spaces: 'Asignar Aviso a Centro/Espacio',
-    error: 'No ha sido posible {action} el aviso',
-    success: 'El aviso se ha {action} correctamente',
-    confirm_delete: '¿Está seguro de que quiere eliminar el aviso?'
-  },
-  available: 'Disponible | Disponibles',
-  end_plan: 'Fecha expiración',
-  start_plan: 'Fecha de inicio',
-  adjust_width: 'Ajustar contenido',
-  add: 'Añadir',
-  months: '',
-  inactive: '',
-  added: 'Añadido',
-  address: 'Dirección',
-  full_address: 'Dirección completa',
-  add_plan: 'Añadir Plan',
-  admin: 'Admin',
-  apply: 'Aplicar',
-  assign: 'Asignar',
-  assigned: 'asignado',
-  assigned_days: 'Días asignados',
-  assign_plan: 'Asignar Plan',
-  audio_layers: {
-    num: 'Capa de audio | Capas de audio',
-    create: 'Crear capa de audio',
-    edit: 'Editar capa de audio',
-    information: 'Información de la capa de audio',
-    drag_tooltip: 'Puede cambiar las prioridades de las capas de audio arrastrando los elementos del listado hacia arriba y abajo.',
-    types: 'Tipos de capas de audio',
-    error: 'No ha sido posible {action} la capa de audio',
-    success: 'La capa de audio se ha {action} correctamente',
-    confirm_delete: '¿Está seguro de que quiere eliminar la capa de audio?'
-  },
-  audio_playback_space: '¿Reproducción del Audio en todo el Espacio?',
-  available_date: 'Disponible {date}',
-  available_formats: 'Formatos disponibles',
-  back: 'Volver',
-  validated: 'Validado',
-  valid_until: 'Válido hasta',
-  reproductor: 'Reproductor',
-  billings: {
-    num: 'Facturación|Facturaciones',
-    edit: 'Editar datos de facturación',
-    information: 'Datos de facturación',
-    service_with_additional: 'Servicio con facturación adicional',
-    plan: 'Plan Contratado',
-    history: 'Histórico de pagos',
-    company_name: 'Razón social',
-    contact_person: 'Persona de contacto',
-    payment_method_selected: 'Medio de pago seleccionado',
-    period: 'Periodo',
-    amount: 'Importe',
-    bill: 'Factura',
-    payments_made: 'Pagos realizados',
-    valid_card: 'Tarjeta validada',
-    valid_card_description: 'La tarjeta ya está preparada para poder hacer pagos con ella.',
-    success_status: 'Todo en orden',
-    success_status_description: 'No hay pagos pendientes.',
-    success_status_description_payment: 'El próximo pago previsto será el {date} por {amount}€.',
-    payment_edit: 'Editar método de pago',
-    basic_plan: 'Plan Básico',
-    current_active_plan: 'Plan activo actual',
-    unsubscribe: 'Cancelar mi subscripción',
-    question_unsubscribe: '¿Está seguro de que quiere cancelar su subscripción?',
-    edit_billing_info: {
-      check_and_confirm_title: 'REVISA Y CONFIRMA TUS DATOS',
-      check_and_confirm_desc: 'El cambio de tus datos de facturación se aplicará a las próximas facturas que se emitan'
-    }
-  },
-  billing_centers: {
-    num: 'Centro de facturación | Centros de facturación',
-    create: 'Crear centro de facturación',
-    edit: 'Editar Centro de facturación',
-    error: 'No ha sido posible {action} el centro de facturación',
-    success: 'El centro de facturación se ha {action} correctamente',
-    confirm_delete: '¿Está seguro de que quiere eliminar el centro de facturación?'
-  },
-  headquarter: 'Empresa Principal',
-  both_names_required: 'Ambos nombres son requeridos',
-  b_business_name: 'Nombre empresarial',
-  b_financial_person: 'Persona de Finanzas',
-  b_invoice_email: 'Email facturación',
-  b_order_number: 'Nº Orden',
-  others: 'Otros',
-  b_provider_number: 'Nº Provedor',
-  cancel: 'Cancelar',
-  cant_be_greater_than: 'La cantidad debe ser menor que ',
-  cant_be_less_than: 'La cantidad no puede ser menor que ',
-  cant_be_zero: 'La cantidad no puede ser igual a 0',
-  centes_and_spaces: 'Centros y espacios seleccionados',
-  managed_by: 'Gestionado por',
-  centers: {
-    num: 'Centro|Centros',
-    spaces_count: '# de centros/espacios',
-    create: 'Crear centro',
-    selecteds: 'Centros seleccionados',
-    edit: 'Editar centro',
-    information: 'Información del centro',
-    filter: 'Filtrar centros',
-    assign: {
-      num: 'Asignar centro|Asignar centros'
-    },
-    no_data: 'No se encontraron centros bajo esos filtros',
-    languages: 'Idiomas del centro',
-    from_to: 'Centros de {0}-{1}',
-    associated: 'Centros Asociados',
-    selected: 'Centros seleccionados',
-    remove: 'Retirar centro',
-    select_for_plan: 'Selecciona los centros para el plan: ',
-    select_for_schedule_exception: 'Seleccione los centros donde se asignará la excepción de horario',
-    select_schedule_to_centers: 'Seleccione los centros donde se asignará el horario programado {0}',
-    error: 'No ha sido posible {action} el centro',
-    success: 'El centro se ha {action} correctamente|Los centros se {action} correctamente',
-    success_upload_csv: 'El csv con el listado de centros fue subido correctamente',
-    error_upload_csv: 'Hubo un problema al subir el csv con el listado de centros, revise el formato',
-    success_remove_from_internal_com: 'Se ha retirado el centro de la comunicación y de todas sus programaciones',
-    success_remove_from_programming: 'Se ha retirado el centro de la programación',
-    error_select: 'Selecciona al menos un centro antes de continuar, gracias',
-    confirm_delete: '¿Está seguro de que quiere eliminar el centro?',
-    confirm_remove_from_programming: '¿Está seguro de que desea retirar el centro de esta programación?',
-    confirm_remove_from_internal_com: '¿Está seguro de que desea retirar el centro de esta comunicación? Se retirará también de cada una de sus programaciones',
-    warn_not_loaded: 'Algunos centros no se han cargado correctamente. Verifique que tiene el archivo correcto'
-  },
-  change: 'Cambiar',
-  change_icon: 'Cambiar icono',
-  change_image: 'Cambiar imagen',
-  change_plan: 'Cambiar plan',
-  choose_audio: 'Escoge un audio .mp3 o .ogg',
-  choose_image: 'Escoge una imagen .png, .jpeg o jpg',
-  choose_logo: 'Escoge un logo .png, .jpeg o jpg',
-  city: 'Ciudad',
-  code: 'Código',
-  company: 'Empresa',
-  company_name: 'Nombre Empresa',
-  company_sector: 'Sector empresa',
-  complete: 'Completo',
-  confirm: 'Confirmar',
-  confirmation: 'Confirmación',
-  confirm_delete_plan: '¿Está seguro de que quiere eliminar el plan?',
-  confirm_save_order: '¿Está seguro de que desea establecer este orden?',
-  confirm_unsubscribe: '¿Está seguro de que quiere darse de baja del plan?',
-  confirm_unsubscribe_text:
-    'A continuación se muestra la fecha en la que el centro será dado de baja del plan',
-  contact: 'Contacto',
-  contact_phone: 'Teléfono contacto',
-  contents: {
-    num: 'Contenido | Contenidos',
-    edit: 'Editar contenido',
-    new: 'Nuevo contenido',
-    upload: 'Cargar contenido',
-    error: 'No ha sido posible {action} el contenido',
-    success: 'El contenido se ha {action} correctamente',
-    all_good: 'En emisión',
-    all_good_description: 'No hay incidencias relacionadas con esta pantalla',
-    available_types: 'Tipos de contenidos admitidos',
-    available_types_sub: 'La biblioteca de contenidos admite audio, video e imagen:',
-    confirm_delete: '¿Está seguro de que quiere eliminar el contenido?',
-    detail: 'Detalle del contenido',
-    audios_sub: 'Los <br>audios</br> son archivos con extensión {audioFormats}',
-    videos_sub: 'Los <b>videos</b> son archivos con extensión {videoFormats}',
-    images_sub: 'Las <b>imágenes</b> son archivos con extensión {imagesFormats}'
-  },
-  continue: 'Continuar',
-  country: 'País',
-  cover: 'Carátula',
-  create: 'crear',
-  created_at: 'Creado',
-  create_plan: 'Crear plan',
-  crop: 'Recortar y adaptar',
-  channels: {
-    num: 'Canal|Canales',
-    add: 'Añadir canal',
-    edit: 'Editar canal',
-    information: 'Información del canal',
-    current: 'Canal actual',
-    assigned_spaces: 'Espacios asignados al canal',
-    top: 'Canales más reproducidos',
-    mix: 'Canal Mix',
-    name: 'Nombre del canal',
-    remove: 'Retirar canal',
-    assign: 'Asignar canal',
-    catalog: 'Catálogo de canales',
-    songs: 'Canciones del canal',
-    not_found: 'No se han encontrado canales para mostrar',
-    availables_for: 'Canales disponibles para',
-    assigned: 'Canales asignados',
-    mute_all: 'Silenciar canales',
-    own: 'Canales propios',
-    music: 'Canales de música',
-    search: 'Buscar canales',
-    all: 'Todos los canales',
-    show_catalog: '¿Mostrar canales catálogo?',
-    success: 'El canal se ha {action} correctamente',
-    error: 'No ha sido posible {action} el canal',
-    scheduled: 'Canal Programado',
-    schedule_description: 'Este es un canal programado en donde se podrá seleccionar y programar canales catálogo',
-    sum_percentages: 'La suma de porcentajes debe de ser 100',
-    confirm_delete: '¿Está seguro de que quiere eliminar el canal?',
-    error_getting_music: 'Error al obtener música del canal',
-    type: {
-      num: 'Tipo de canal|Tipos de canales',
-      create: 'Crear tipo de canal',
-      edit: 'Editar tipo de canal',
-      information: 'Información de tipo de canal',
-      success: 'El tipo de canal se ha {action} correctamente',
-      error: 'No ha sido posible {action} el tipo de canal',
-      confirm_delete: '¿Está seguro de que quiere eliminar el tipo de canal?'
-    },
-    selected: 'Canales Seleccionados',
-    error_selected: 'Error debe seleccionar al menos un canal',
-    success_assigned: 'Los canales fueron asignados a {entity} correctamente'
-  },
-  custom_channels: {
-    num: 'Canal personalizado|Canales personalizados',
-    create: 'Crear canal personalizado',
-    edit: 'Editar canal personalizado',
-    information: 'Información del canal personalizado',
-    scheduled: 'Canales programados',
-    description: 'Este es un canal personalizado en donde se podrá seleccionar canales catálogo',
-    request_for_new: 'Solicitud de nuevo canal personalizado',
-    confirm_delete: '¿Está seguro de que quiere eliminar el canal personalizado?',
-    error: 'No ha sido posible {action} el canal personalizado',
-    success: 'El canal personalizado se ha {action} correctamente'
-  },
-  dashboard: 'Tablero',
-  data: {
-    company_brand: 'Datos de empresa/marca'
-  },
-  distributors: {
-    information: 'Información de sociedad de autores',
-    action: '{action} sociedad de autores',
-    society: 'Sociedad de autores',
-    success: 'La sociedad de autores se ha {action} correctamente',
-    error: 'No ha sido posible {action} la sociedad de autores',
-    confirm_delete: 'Está seguro de que quiere eliminar la sociedad de autores?'
-  },
-  ensure_save_changes: 'Asegúrese de guardar los cambios para que se establezcan.',
-  for: 'Para',
-  assigned_correctly: 'Asignado correctamente',
-  emx: 'EMX ID',
-  song: 'Canción',
-  duration: 'Duración',
-  artist: 'Artista',
-  init_hour: 'Hora de inicio',
-  all: 'Todo',
-  changed_channel: 'Se ha cambiado de canal exitosamente',
-  changed_channel_error: 'Ocurrió un error al cambiar canal',
-  to_show: 'Mostrar',
-  currency: 'Moneda',
-  current_plan: 'Plan actual',
-  customer: 'Cliente',
-  customers: {
-    num: 'Cliente|Clientes',
-    count: '# de clientes',
-    new: 'Nuevo Cliente',
-    create: 'Crear cliente',
-    edit: 'Editar cliente',
-    information: 'Datos del cliente',
-    data: 'Mis Datos Cliente',
-    is_demo: '¿Cliente demo?',
-    assign: 'Asignar clientes',
-    assigned: 'Clientes asignados',
-    error: 'No ha sido posible {action} el cliente',
-    success: 'El cliente se ha {action} correctamente',
-    confirm_activate: '¿Está seguro de que quiere activar el cliente?',
-    confirm_delete: '¿Está seguro de que quiere eliminar el cliente?',
-    demo: {
-      num: 'Cliente en periodo de prueba | Clientes en periodo de prueba'
-    },
-    types: {
-      num: 'Tipo cliente'
-    },
-    partners: {
-      num: 'Cliente del partner|Clientes del partner',
-      create: 'Crear cliente de partner'
-    }
-  },
-  deleted: 'eliminado',
-  demo: 'día de prueba | días de prueba',
-  description: 'Descripción',
-  destination: 'Destino',
-  direct_phone: 'Teléfono directo',
-  documentation: 'Documentación',
-  dynamics365_id: 'ID Dynamics',
-  edit_password: 'Editar contraseña',
-  edit_no_password: 'No cambiar contraseña',
-  edit_plan: 'Editar plan',
-  edit_rol: 'Editar rol',
-  email: 'Email',
-  error_404: 'La página que buscas no existe',
-  schedule_exceptions: {
-    num: 'Excepción de horario|Excepciones de horarios',
-    create: 'Crear excepción de horario',
-    edit: 'Editar excepción de horario',
-    information: 'Información de la excepción de horario',
-    confirm_delete: '¿Está seguro de que quiere eliminar la excepción de horario?',
-    error: 'No ha sido posible {action} la excepción de horario',
-    success: 'La excepción de horario se ha {action} correctamente'
-  },
-  exit: 'Salir',
-  expire_at: 'Acaba en:',
-  fax: 'Fáx',
-  filter_mark_spaces: 'Se marcaron los espacios correspondientes al filtro',
-  filter_no_results: 'El filtro no produjo resultados',
-  finish: 'Finalizar',
-  floor_status_ok: 'Espacio activo y sin incidencias',
-  floor_status_missing_settings: 'Falta configuración en el espacio',
-  floor_status_not_active: 'El espacio no está operativo',
-  floor_status_incidences: 'Hay alguna incidencia en el espacio',
-  flux_app: 'Flux Studio',
-  format: 'Formato',
-  form: {
-    error: 'El formulario tiene algún error',
-    error_complete: 'Rellene los datos correctamente',
-    error_at_least_one: 'Deber elegir almenos una opción',
-    error_date: 'La fecha no está en un formato válido',
-    error_time: 'La hora no está en un formato válido',
-    error_email: 'Formato de correo electrónico no válido',
-    error_expire_at:
-      'La fecha de fin no puede ser anterior a la fecha de inicio',
-    error_password_equals:
-      'Tu Confirmación de Contraseña debe ser igual a tu Contraseña',
-    error_password_min: 'Tu Contraseña debe tener al menos 8 caracteres',
-    error_phone: 'Formato de teléfono no válido',
-    error_quantity: 'Debe ser mayor que 0',
-    error_quantity_multiple: 'Este servicio solo admite una unidad',
-    error_required: 'Campo obligatorio',
-    error_start_at:
-      'La fecha de inicio no puede ser posterior a la fecha de fin',
-    error_terms: 'Necesitas aceptar las condiciones de uso',
-    error_website: 'Formato de URL no válido',
-    error_before: 'La fecha no puede ser antes de {0}',
-    error_after: 'La fecha no puede ser después de {0}',
-    error_time_interval:
-    'La hora de fin no puede ser anterior a la hora de inicio',
-    error_valid_time: 'La hora ingresada no es válida',
-    error_valid_percentage: 'El porcentaje ingresado no es válido',
-    error_sum_valid_percentage: 'La suma de los porcentajes debe ser 100',
-    error_number: 'Debe ser un número',
-    error_integer_number: 'Debe ser un número entero',
-    error_integer_percentage_number: 'El porcentaje ingresado debe ser un número entero',
-    error_priority_number: 'La prioridad debe ser un número',
-    error_frequency_quantity: 'La frecuencia debe ser un número positivo',
-    error_interval_quantity: 'El intérvalo máximo debe ser un número positivo',
-    error_value_positive: 'El valor ingresado debe ser un número positivo',
-    error_max_characters: 'Ingrese un máximo de {0} caracteres'
-  },
-  freelance: 'Freelance',
-  frequency_of_payment: 'Frecuencia de pago',
-  greeting: 'Hola ',
-  hide: 'Ocultar',
-  hide_plans: 'Ocultar planes',
-  holiday: 'Día festivo',
-  how_knows: '¿Como nos conoció?',
-  improvement_plan: 'Mejorar plan',
-  in: 'En',
-  information: 'Información',
-  instructions_verification_email:
-    'Te hemos enviado en email de verificación, sigue sus instrucciones',
-  invalid_file: 'El archivo no es válido',
-  invalid_token: 'El token no es válido',
-  inventories: {
-    num: 'Inventario|Inventarios'
-  },
-  devices: {
-    num: 'Dispositivo|Dispositivos',
-    create: 'Registrar dispositivo',
-    edit: 'Editar dispositivo',
-    information: 'Información del dispositivo',
-    to_assign: 'Dispositivos a asignar',
-    confirm_delete: '¿Está seguro de que quiere eliminar el dispositivo?',
-    volume_settings: 'Configuración de volumen',
-    registration_code: 'Identificador de dispositivo',
-    device_type: 'Tipo de dispositivo',
-    error: 'No ha sido posible {action} el dispositivo',
-    success: 'El dispositivo se ha {action} correctamente',
-    connected: 'Conectado',
-    offline: 'Desconectado',
-    current_instalation: 'Instalación actual',
-    history: 'Histórico',
-    description_status_success: 'Activado el {date} por {user} \n Este dispositivo está funcionando correctamente.',
-    in_warehouse: 'En Almacén',
-    catalog: 'Catálogo',
-    description: 'dispositivos \n en inventario',
-    warehouse: {
-      num: 'dispositivos \n en almacén|dispositivo \n en almacén|dispositivos \n en almacén'
-    },
-    product: {
-      num: 'dispositivos de\n este producto|dispositivo de\n este producto|dispositivos de\n este producto'
-    },
-    by_type: 'Por tipo',
-    by_status: 'Por Estado',
-    by_warehouse: 'Por Almacén',
-    seniority: 'Antigüedad',
-    serial_number: 'Número de serie',
-    installation_comments: 'Comentario de instalación',
-    installation_drawing: 'Plano de instalación',
-    remote_actions: 'Acciones remotas',
-    music_volume: 'Volumen de música',
-    comunications_volume: 'Volumen de comunicaciones',
-    announcements_volume: 'Volumen de anuncios',
-    installation: 'Instalación',
-    in_service: 'En servicio',
-    not_connected: 'No conectado',
-    not_exists: 'Dispositivo no existe en almacén o ya está en uso.',
-    check_manually: 'Si no puede escanear el código o subirlo como imagen, introduzca el número ser serie y la dirección MAC de su dispositivo en el siguiente formulario y pulse en “COMPROBAR”',
-    check: 'Comprobar',
-    check_info: 'Comprobar información'
-  },
-  assignment: 'Asignar',
-  map: 'Mapa',
-  events: 'Eventos',
-  filters: 'Filtros',
-  mosaics: {
-    mosaic: 'Mosaico|Mosaicos',
-    select_mosaic: 'Selección de mosaico'
-  },
-  products: {
-    num: 'Producto|Productos',
-    create: 'Crear producto',
-    edit: 'Editar producto',
-    details: 'Detalles del producto',
-    photo: 'Foto del producto',
-    confirm_delete: '¿Está seguro de que quiere eliminar el producto?',
-    error: 'No ha sido posible {action} el producto',
-    success: 'El producto se ha {action} correctamente',
-    technical_data: 'Ficha técnica',
-    add_technical_data: 'Añadir una ficha técnica',
-    add_technical_data_description: 'En esta sección puede añadir un documento que contenga información importante',
-    individual_id: 'Identificación individual',
-    individual_id_description: '',
-    unit_counter: 'Contador de unidades',
-    unit_counter_description: '',
-    number_of_units: 'Número de unidades',
-    invalid_mac_or_serial_number: 'MAC o número serial inválido en la fila {number}',
-    error_selected_warehouse: 'Es necesario seleccionar un almacén',
-    error_download_technical_sheet: 'No ha sido posible descargar la ficha técnica',
-    error_csv_header: 'El archivo csv debe contener como cabecera serial_number y mac_address'
-  },
-  product_types: {
-    num: 'Tipo de producto|Tipos de producto',
-    create: 'Crear tipo de producto',
-    edit: 'Editar tipo de producto',
-    confirm_delete: '¿Está seguro de que quiere eliminar el tipo de producto?',
-    error: 'No ha sido posible {action} el tipo de producto',
-    success: 'El tipo de producto se ha {action} correctamente',
-    management: 'Gestión de tipos de producto',
-    management_description: ''
-  },
-  providers: {
-    num: 'Proveedor|Proveedores',
-    create: 'Crear proveedor',
-    edit: 'Editar proveedor',
-    confirm_delete: '¿Está seguro de que quiere eliminar el proveedor?',
-    error: 'No ha sido posible {action} el proveedor',
-    success: 'El proveedor se ha {action} correctamente',
-    management: 'Gestión de proveedores',
-    management_description: ''
-  },
-  stocks: {
-    num: 'Stock|Stocks',
-    add: 'Añadir stock',
-    sourceable_type: 'Tipo de origen',
-    destinationable_type: 'Tipo de destino',
-    unit_price: 'Precio unitario',
-    total_price: 'Precio total',
-    movements: {
-      num: 'Movimiento de stock|Movimientos de stock',
-      create: 'Crear movimiento de stock',
-      edit: 'Editar movimiento de stock'
-    },
-    confirm_delete: '¿Está seguro de que quiere eliminar el movimiento de stock?',
-    error: 'No ha sido posible {action} el movimiento de stock',
-    success: 'El movimiento de stock se ha {action} correctamente',
-    available: 'Stock disponible',
-    control_for_this_product: 'Control de stock para este producto',
-    control_for_this_product_description: 'Desde esta sección puede agregar stock y asociarlo a un almacén',
-    select_warehouse: 'Selecciona el almacén hacia donde se van a transferir los dispositivos seleccionados.',
-    add_product: 'Añadir stock de producto',
-    add_product_description: 'Desde aquí podrás añadir stock de un producto y asignarlo a un almacén.',
-    management_description: 'Para la gestión del stock de este producto necesitas indicar la cantidad de dispositivos a añadir. ',
-    error_amount_or_csv: 'Es necesario añadir stock o un cargar csv'
-  },
-  warehouses: {
-    num: 'Almacén|Almacenes',
-    create: 'Crear almacén',
-    edit: 'Editar almacén',
-    information: 'Información de almacén',
-    confirm_delete: '¿Está seguro de que quiere eliminar el almacén?',
-    error: 'No ha sido posible {action} el almacén',
-    success: 'El almacén se ha {action} correctamente',
-    distination: 'Almacén de destino',
-    management: 'Gestionar almacenes',
-    management_b: 'Gestión de almacenes',
-    management_description: 'Desde aquí podrás añadir un almacen.',
-    name: 'Nombre del almacén',
-    error_selected_provider: 'Es necesario seleccionar un socio'
-  },
-  is_playing: 'Está sonando',
-  it_comes_into: 'Entra en vigor desde',
-  lastname: 'Apellidos',
-  login: 'Entrar',
-  month: 'Mes|Meses',
-  monthly: 'Mensual',
-  month_price: 'Precio mes',
-  multiple: 'Múltiple',
-  my_partner_data: 'Mis Datos Partner',
-  name: 'Nombre',
-  next_plan: 'Siguiente plan',
-  no_adjust: 'Conservar formato',
-  no_plan: 'Sin plan',
-  no_results: 'No hay resultados',
-  notify_error_adding: 'Error al añadir, por favor inténtelo de nuevo.',
-  notify_error_select: 'Como mínimo debes señalar uno.',
-  notify_error_select_day_needed:
-    'Debe elegir al menos un día de la semana',
-  notify_error_select_day_in_range:
-    'Ningún día de la semana seleccionado se encuentra en el periodo establecido para el aviso',
-  notify_error_select_plan: 'Selecciona un plan antes de continuar, gracias',
-  notify_error_select_payment_frecuency:
-  'Selecciona una frecuencia de pago antes de continuar, gracias',
-  notify_error_server: 'El campo {field} {errorMessage}',
-  notify_ko_add_plan_to_centers:
-    'No ha sido posible añadir el plan a los centros',
-  notify_ko_create_plan: 'No ha sido posible crear el plan',
-  notify_ko_delete_plan: 'No ha sido posible eliminar el plan',
-  notify_ko_delete_rol: 'No ha sido posible eliminar el rol',
-  notify_ko_exists_plan:
-    'Ya tienes este servicio en tu lista, elimínalo para modificar',
-  notify_ko_file_required:
-    'El archivo es requerido',
-  notify_ko_login: 'No ha sido posible entrar, revisa tus datos',
-  notify_ko_phone: 'El teléfono no es válido o esta en uso',
-  notify_ko_recover_email:
-    'No ha sido posible enviar el email de recuperación',
-  notify_ko_recover_phone:
-    'No ha sido posible enviar el SMS de recuperación',
-  notify_ko_reset_password: 'No ha sido posible restablecer tu constraseña',
-  notify_ko_select_plan: 'No ha sido posible seleccionar tu plan',
-  notify_ko_signup:
-    'No ha sido posible crear tu usuario',
-  notify_ko_unsubscribe_plan:
-    'Disculpa, ha habido un problema dando de baja el plan',
-  notify_ko_update_data: 'No se han podido actualizar tus datos',
-  notify_ko_update_plan:
-    'No ha sido posible actualizar el plan',
-  notify_ok_add_plan_to_center:
-    'El plan se ha asociado correctamente al centro seleccionado',
-  notify_ok_add_plan_to_centers:
-    'El plan se ha asociado correctamente a los centros seleccionados',
-  notify_ok_assign_clients:
-    'Los clientes se han asignado correctamente',
-  notify_ok_changes:
-    'Los cambios han sido actualizados correctamente',
-  notify_ok_create_plan: 'El plan se ha creado correctamente',
-  notify_ok_delete_plan: 'El plan se ha borrado correctamente',
-  notify_ok_login: 'Bienvenido a Flux Studio',
-  notify_ok_recover_email: 'Te hemos enviado un email a:',
-  notify_ok_recover_phone: 'Te hemos enviado un SMS al:',
-  notify_ok_reset_password: 'La contraseña se restablecio correctamente',
-  notify_ok_select_plan: 'Tu plan se ha seleccionado correctamente',
-  notify_ok_signup: 'Te hemos enviado un email de confirmación',
-  notify_ok_unsubscribe_plan: 'El plan ha dado de baja correctamente',
-  notify_ok_update_data: 'Los datos se han actualizado correctamente',
-  notify_ok_update_plan: 'El plan se ha actualizado correctamente',
-  notify_ok_update_order: 'El orden se ha actualizado correctamente',
-  notify_ok_created_corretly: 'Creado correctamente',
-  notify_ok_update_successfully: 'Actualizado correctamente',
-  notify_ko_error_processing_data: 'Error al procesar los datos',
-  panel: 'Panel',
-  partner: 'Partner',
-  partners: {
-    num: 'Partner|Partners',
-    name: 'Nombre de partner',
-    create: 'Crear Partner',
-    edit: 'Editar Partner',
-    information: 'Información del partner',
-    confirm_delete: '¿Está seguro de que quiere eliminar el partner?',
-    notify_ko_created: 'No ha sido posible crear el partner',
-    notify_ko_deleted: 'No ha sido posible eliminar el partner',
-    notify_ko_updated: 'No ha sido posible actualizar el partner',
-    notify_ok_created: 'El partner se ha creado correctamente',
-    notify_ok_deleted: 'El partner se ha borrado correctamente',
-    notify_ok_updated: 'El partner se ha actualizado correctamente'
-  },
-  password: 'Contraseña',
-  password_confirm: 'Repite la contraseña',
-  password_confirmation: 'Confirmación de Contraseña',
-  pending_assignment: 'Pendientes de asignación',
-  phone: 'Teléfono',
-  plans: 'Planes',
-  plan_description: 'Descripción plan',
-  plan_name: 'Nombre del plan',
-  plan_pending: 'Plan pendiente',
-  plan_type: 'Tipo Plan',
-  pending: 'Pendiente',
-  position: 'Puesto',
-  published: 'Publicado',
-  quantity: 'Cantidad',
-  quarter: 'Trimestre',
-  quarterly: 'Trimestral',
-  price: 'Precio',
-  quarter_price: 'Precio Trimestre',
-  recover_password: 'Recuperar contraseña',
-  remaining_test_days: 'Días de prueba restantes',
-  remove: 'eliminar',
-  repeat_from: 'Repetir desde',
-  repeat_until: 'Repetir hasta',
-  resend_email: 'Volver a enviar email de confirmación',
-  reset: 'Restablecer',
-  resolution: 'Resolucíón',
-  restrictions: 'Restricciones',
-  roles: {
-    num: 'Rol|Roles',
-    kind: 'Tipo de rol',
-    create: 'Crear rol',
-    edit: 'Editar rol',
-    information: 'Información de rol',
-    error: 'No ha sido posible {action} el rol',
-    success: 'El rol se ha {action} correctamente',
-    confirm_delete: '¿Está seguro de que quiere eliminar el rol?'
-  },
-  status_stats: 'Estado & Estadísticas',
-  save_order: 'Establecer orden',
-  schedules: {
-    num: 'Horario|Horarios',
-    programmed: {
-      num: 'Horario programado|Horarios programados'
-    },
-    add: 'Añadir horario',
-    edit: 'Editar horario',
-    detail: 'Detalle del Horario',
-    action: '{action} Horario',
-    confirm_delete: '¿Está seguro de que quiere eliminar el horario?',
-    information: 'Información del canal personalizado',
-    error: 'No ha sido posible {action} el horario',
-    success: 'El horario se ha {action} correctamente',
-    error_time_overlap: 'El horario indicado se solapa con otra canal programado'
-  },
-  sectors: {
-    num: 'Sector|Sectores',
-    create: 'Crear sector',
-    edit: 'Editar sector',
-    information: 'Información del sector',
-    error: 'No ha sido posible {action} el sector',
-    success: 'El sector se ha {action} correctamente',
-    confirm_delete: '¿Está seguro de que quiere eliminar el sector?'
-  },
-  select_languages: 'Seleccionar idiomas',
-  select_marked: 'Seleccionar marcados',
-  select_plan: 'Selecciona un plan',
-  selected: 'Seleccionado|Seleccionados',
-  send: 'Enviar',
-  send_data: 'Ya puede enviar sus datos',
-  services: {
-    num: 'Servicio|Servicios',
-    create: 'Crear servicio',
-    edit: 'Editar servicio',
-    add: 'Añadir Servicio',
-    add_plan: 'Servicios que puedes añadir a tu plan',
-    active: 'Servicios activos',
-    select: 'Selecciona servicio',
-    selected: 'Servicio seleccionado',
-    apply_to: 'Aplicar servicio a',
-    not_available: 'No hay servicios disponibles',
-    error_select: 'Seleccione un servicio',
-    error: 'No ha sido posible {action} el servicio',
-    success: 'El servicio se ha {action} correctamente',
-    confirm_delete: '¿Está seguro de que quiere eliminar el servicio?',
-    type: {
-      num: 'Tipo de servicio|Tipo de servicios',
-      create: 'Crear Tipo de Servicio',
-      information: 'Información del tipo de servicio',
-      error: 'No ha sido posible {action} el tipo de servicio',
-      success: 'El tipo de servicio se ha {action} correctamente',
-      confirm_delete: '¿Está seguro de que quiere eliminar el tipo de servicio?'
-    }
-  },
-  signup: 'Crear cuenta',
-  spaces: {
-    num: 'Espacio|Espacios',
-    create: 'Crear espacio',
-    edit: 'Editar espacio',
-    information: 'Información del espacio',
-    selected: 'Espacio seleccionado',
-    selecteds: 'Espacios seleccionados',
-    affected: 'espacios afectados',
-    duration: '{0} días de duración en {1} espacios',
-    assign: 'Asignar espacios',
-    with_language_conflicts: '{0} espacios presentan conflictos con este idioma.',
-    error_mandatory: 'Debe elegir un espacio',
-    error: 'No ha sido posible {action} el espacio',
-    success: 'El espacio se ha {action} correctamente|Los espacios se {action} correctamente',
-    warn_not_loaded: 'Algunos centros no se han cargado correctamente. Verifique que tiene el archivo correcto',
-    confirm_delete: '¿Está seguro de que quiere eliminar el espacio?'
-  },
-  space_types: {
-    num: 'Tipo de espacio|Tipo de espacios',
-    create: 'Crear tipo de espacio',
-    edit: 'Editar tipo de espacio',
-    information: 'Información del tipo de espacio',
-    error: 'No ha sido posible {action} el tipo de espacio',
-    success: 'El tipo de espacio se ha {action} correctamente',
-    confirm_delete: '¿Está seguro de que quiere eliminar el tipo de espacio?'
-  },
-  specific: 'Específico',
-  start_at: 'Empieza el:',
-  start_date: 'Fecha de inicio',
-  end_date: 'Fecha de fin',
-  state: 'Provincia',
-  status: 'Estado',
-  store: 'Tienda',
-  stored: 'creado',
-  summary: 'Resumen',
-  summary_select_plan_current:
-    'El plan entrará en vigor en los siguientes centros.',
-  summary_select_plan_next:
-    'Los siguientes centros actualmente tienen un plan vigente. El nuevo plan que vas a asignar inicia en las siguientes fechas.',
-  summary_select_plan_1: 'Vas a seleccionar el plan ',
-  summary_select_plan_2: ' para un total de ',
-  summary_select_plan_3: 'centro | centros',
-  summary_select_service_1: 'Va a añadir el servicio ',
-  summary_select_service_2: ' para el cliente ',
-  summary_select_service_3: ' para el centro ',
-  summary_select_service_4: ' para el espacio ',
-  surface: 'Superficie',
-  surname: 'Apellidos',
-  tax_id_nif: 'NIF',
-  tax_id_cif: 'CIF',
-  termination_date: 'Fecha Final',
-  trade_name: 'Nombre comercial',
-  translations_completed: 'Traducciones completadas',
-  translations_missing: 'Faltan traducciones',
-  treatment: 'Tratamiento',
-  trial_days: 'Días de prueba',
-  trial_status: 'Período de prueba activo',
-  try_again: 'Intente de nuevo',
-  unit: 'Unitario',
-  units: {
-    num: 'Unidad|Unidades'
-  },
-  unit_price: 'Precio unitario',
-  unselect: 'Deseleccionar',
-  unselect_everything: 'Deseleccionar todo',
-  unsubscribe: 'Dar de baja centro',
-  unsubscribe_plan: 'Dar de baja al plan del centro',
-  update: 'actualizar',
-  updated: 'actualizado',
-  upload_image: 'Cargar imagen',
-  upload_photo: 'Sube una foto',
-  upload_doc: 'Sube un documento',
-  enter_manually: 'Introducir manualmente',
-  user: 'Usuario',
-  users: {
-    num: 'Usuario|Usuarios',
-    create: 'Crear usuario',
-    edit: 'Editar usuario',
-    information: 'Información del usuario',
-    name: 'Nombres del usuario',
-    surname: 'Apellidos del usuario',
-    recover: 'Recuperar usuario',
-    error: 'No ha sido posible {action} el usuario',
-    success: 'El usuario se ha {action} correctamente',
-    success_update: 'El {userType} se ha actualizado correctamente',
-    error_update: 'No ha sido posible actualizar el {userType}',
-    success_enable: 'Se ha habilitado usuario con éxito',
-    error_enable: 'Ocurrió un error al habilitar usuario',
-    success_activated: 'Usuario activado con éxito',
-    error_activated: 'Ocurrió un error al activar usuario',
-    success_deactivated: 'Usuario desactivado con éxito',
-    error_deactivated: 'Ocurrió un error al desactivar usuario',
-    success_upload_csv: 'El csv con el listado de usuarios fue subido correctamente',
-    error_upload_csv: 'Hubo un problema al subir el csv con el listado de usuarios, revise el formato',
-    confirm_enable: '¿Está seguro que desea habilitar usuario?',
-    confirm_activate: '¿Está seguro de que quiere activar el usuario?',
-    confirm_deactivate: '¿Está seguro de que quiere desactivar el usuario?',
-    confirm_delete: '¿Está seguro de que quiere eliminar el usuario?',
-    types: {
-      num: 'Tipo de usuario'
-    }
-  },
-  vat: 'IVA',
-  validating_email: 'Estamos validando tu email, danos unos segundos',
-  view: 'Ver',
-  view_all: 'Ver todo',
-  web_address: 'Dirección web',
-  weekdays: ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'],
-  year: 'Año',
-  yearly: 'Anual',
-  year_price: 'Precio anual',
-  your_email: 'Tu Email',
-  your_phone: 'Tu teléfono',
-  your_plan: 'Tu plan es:',
-  zip: 'CP',
-  floor: 'Piso',
-  opening: 'Horario',
-  opening_example: 'Ejemplo: L-V 09:00 - 22:00',
-  technical_details: 'Detalles técnicos',
-  installation_map: 'Mapa de instalación',
-  change_map: 'Cambiar mapa',
-  zone_map: 'Mapa de Zona',
-  location: 'Ubicación',
-  indoor: 'Interior',
-  outdoor: 'Exterior',
-  no_translation: 'No tiene traducción',
-  yes: 'Si',
-  to_look_for: 'Buscar por',
-  filter: 'Filtrar',
-  delete_filter: 'Borrar filtros',
-  issues: {
-    num: 'Incidencia|Incidencias',
-    create: 'Crear incidencia',
-    type: 'Tipo de incidencia',
-    error: 'No ha sido posible {action} la incidencia',
-    success: 'La incidencia se ha {action} correctamente'
-  },
-  title: 'Título',
-  add_comment: 'Agregar comenterio',
-  type: 'Tipo',
-  comments: {
-    num: 'Sin comentarios|Comentario|Comentarios'
-  },
-  public: 'Público',
-  unlimited: 'Ilimitado',
-  tags: {
-    num: 'Etiqueta|Etiquetas',
-    add: 'Añadir Etiqueta',
-    management: 'Gestión de etiquetas',
-    not_exists: 'No hay etiquetas',
-    select: 'Seleccionar etiquetas',
-    select_centers_spaces: 'Centros y espacios seleccionados',
-    error: 'No ha sido posible {action} la etiqueta',
-    success: 'La Etiqueta se ha {action} correctamente',
-    confirm_delete: '¿Está seguro de que quiere eliminar la etiqueta?',
-    select_tag_to_centers_spaces: 'Seleccione los centros y espacios donde se asignará la etiqueta {0}',
-    error_drop: 'No puede ubicar esta etiqueta aquí, porque ya existe una con el mismo nombre',
-    error_cant_assign_parent_on_child_tag: 'No puede ubicar una etiqueta padre dentro de una descendiente',
-    error_cant_drop_tag_on_parent_same_name: 'No puede ubicar esta etiqueta aquí, porque su padre tiene el mismo nombre',
-    error_tag_name_used: 'El nombre de la etiqueta ya está en uso dentro de su jerarquía'
-  },
-  no_songs_schedule: 'No hay canciones para este horario',
-  loading: 'Cargando',
-  play: 'Reproducir',
-  pause: 'Pausar',
-  welcome: 'Bienvenido',
-  my_plan: 'Mi Plan',
-  settings: 'Configuración',
-  adjustments: 'Ajustes',
-  sound: 'Sonido',
-  change_password: 'Cambiar contraseña',
-  general: 'General',
-  notifications: 'Notificaciones',
-  payment_methods: 'Métodos de pago',
-  faqs: 'FAQs',
-  privacy: 'Privacidad',
-  new: 'Nuevo',
-  edit: 'Editar',
-  delete: 'Eliminar',
-  or: 'Ó',
-  dark_mode: 'Modo oscuro',
-  light_mode: 'Modo claro',
-  edit_profile: 'Editar perfil',
-  show_profile: 'Mostrar perfil',
-  show_deleted: 'Mostrar borrados',
-  upgrade_plan: 'Mejorar Plan',
-  unknown: 'Desconocido',
-  upgrade: 'Mejorar',
-  change_channel: 'Cambiar canal',
-  no_channels_found: 'No se han encontrado canales para mostrar.',
-  reports: 'Reportes de Reproducciones',
-  generate_report: 'Generar reporte',
-  generate_report_csv: 'Generar csv',
-  played_at: 'Reproducido el',
-  high: 'Alto',
-  low: 'Bajo',
-  audio_quality: 'Calidad de audio',
-  youHavePlans: 'No tienes planos activos',
-  default_quality: 'Cantidad por defecto 1',
-  play_time: 'Hora Reproducción',
-  permissions: {
-    num: 'Permiso|Permisos',
-    create: 'Crear permiso',
-    edit: 'Editar permiso',
-    type: 'Tipo de permiso',
-    information: 'Información del permiso',
-    assign: 'Asignar permisos',
-    assigned: 'Permisos asignados',
-    error: 'No ha sido posible {action} el permiso',
-    success: 'El permiso se ha {action} correctamente',
-    error_select: 'No se pudo seleccionar el permiso',
-    error_select_duplicated: 'No ha sido posible agregar un permiso duplicado',
-    confirm_delete: '¿Está seguro de que quiere eliminar el permiso?'
-  },
-  key: 'Llave',
-  read: 'Lectura',
-  write: 'Escritura',
-  applications: 'Aplicaciones',
-  show_songs: 'Mostrar canciones',
-  information_reports: 'Informes',
-  dates: 'Fechas',
-  priority: 'Prioridad',
-  conflict: 'Sin conflictos | 1 conflicto | {count} conflictos',
-  conflicts: 'Conflictos',
-  new_campaign: 'Nueva Campaña',
-  center_and_space: 'Centro y espacio',
-  centers_and_spaces: 'Centros y espacios',
-  region: 'Localidad',
-  languages: 'Idiomas',
-  language: 'Idioma',
-  saturation: 'Saturación',
-  save_selection: 'Guardar selección',
-  load_csv: 'Cargar CSV',
-  download_csv: 'Descargar CSV',
-  download_pdf: 'Descargar PDF',
-  audio: 'Audio',
-  no_conflicts: 'Sin conflictos',
-  show_details: 'Mostrar detalles',
-  emission_certificates: 'Certificados de emisión',
-  updates_auditory: 'Auditoría de cambios',
-  change_noun: 'Cambio',
-  previous_value: 'Valor anterior',
-  new_value: 'Valor nuevo',
-  date_and_time: 'Fecha y hora',
-  no_conflicts_for_communication: 'No hay conflictos para esta campaña',
-  draft: 'Borrador',
-  active: 'Activo',
-  ready_for_emission: 'Listo para emisión',
-  paused: 'Pausada',
-  cancelled: 'Cancelada',
-  finished: 'Finalizada',
-  planning: 'Planificación',
-  simulation: 'Simulación',
-  upload_new: 'Subir nuevo',
-  audio_name: 'Nombre del audio',
-  uploaded_at: 'Subido el {0}',
-  from: 'Desde',
-  to: 'Hasta',
-  frequency: 'Frecuencia',
-  audio_duration: 'Duración del audio',
-  estimate_plays: 'reproducciones semanales estimadas por espacio',
-  proposed_solution: 'Solución propuesta',
-  conflict_details: {
-    language: {
-      title: 'Comprobación de idiomas',
-      description: 'Hay {0} espacios con idioma diferente al del audio seleccionado para esta programación. Esto significa que en estos espacios se reproducirán audios del idioma incorrecto.',
-      solution: 'Retirar los espacios afectados de esta programación y crear una nueva programación similar a la actual pero con el audio del idioma seleccionado.'
-    },
-    saturation: {
-      title: 'Comprobación de saturación',
-      description: 'Hay {0} espacios con una saturación de comunicación alta para las fechas programadas. Esto significa que en estos espacios la planificación entrará en conflicto con la comunicación ya existente.',
-      solution: 'Revisar los espacios más saturados para valorar el impacto en otras comunicaciones de su inclusión en esta programación.'
-    },
-    conflicts: {
-      title: 'Comprobación de conflictos',
-      description: 'Hay {0} espacios con comunicación programada que coincide con esta comunicación. Esto significa que el número de reproducciones de cada audio se verá alterado.',
-      solution: 'Revisar las prioridades de esta comunicación y las otras en conflicto, para gestionar en qué proporcion se repartirá el tiempo de reproducción entre ellas.'
-    }
-  },
-  saturation_rate: 'tasa media de saturación',
-  planning_has_conflicts: 'de la planificación presenta conflictos',
-  planning_emission_percent: 'de las emisiones planificadas que podrán reproducirse',
-  check: 'Revisar',
-  resolve: 'Solucionar',
-  ignore: 'Ignorar',
-  perfect: '¡Perfecto!',
-  no_status: 'Sin estado',
-  countries: 'Países',
-  show_finished: 'Mostrar finalizadas',
-  days_until_start: 'días hasta el inicio de la campaña',
-  created: 'creado',
-  edited: 'editado',
-  on: 'el',
-  by: 'por',
-  status_titles: {
-    draft: 'Comunicación en borrador',
-    active: {
-      before: 'Comunicación lista para emitir',
-      during: 'Comunicación en emisión',
-      after: 'Comunicación finalizada'
-    },
-    paused: 'Comunicación pausada',
-    cancelled: 'Comunicación cancelada'
-  },
-  status_descriptions: {
-    draft: {
-      before: 'Esta comunicación no se emitirá cuando llegue la fecha de inicio a menos que se marque como lista para emitir.',
-      during: 'Esta comunicación no se está emitiendo porque la programación nunca se marcó como lista para emitir.',
-      after: 'Esta comunicación no se emitió porque nunca se marcó como lista para emitir.'
-    },
-    active: {
-      before: 'Esta comunicación se emitirá cuando llegue la fecha de inicio.',
-      during: 'Esta comunicación se está emitiendo correctamente',
-      after: 'Esta comunicación se ha emitido correctamente'
-    },
-    paused: {
-      before: 'Esta comunicación no se emitirá cuando llegue la fecha de inicio a menos que se marque como lista para emitir.',
-      during: 'Esta comunicación no se está emitiendo porque se marcó como pausada.',
-      after: 'Esta comunicación dejó de emitirse porque se marcó como pausada.'
-    },
-    cancelled: {
-      before: 'Esta comunicación ha sido cancelada y no se emitirá.',
-      during: 'Esta comunicación ha sido cancelada y no se está emitiendo.',
-      after: 'Esta comunicación fue cancelada y, o bien nunca se emitió, o dejó de emitirse.'
-    },
-    programming: {
-      all_active: {
-        before: 'Todas las programaciones están listas para emitir.',
-        during: 'Todas las programaciones se están emitiendo.',
-        after: 'Todas las programaciones se han emitido.'
-      },
-      some_active: {
-        before: 'ATENCIÓN: Hay {0} programaciones que no están listas para emitir.',
-        during: 'ATENCIÓN: Hay {0} programaciones que no se están emitiendo.',
-        after: 'ATENCIÓN: Hay {0} programaciones que no se han emitido o cuya emisión fue interrumpida.'
-      },
-      no_active: {
-        before: 'ATENCIÓN: No hay ninguna programación lista para emitir.',
-        during: 'ATENCIÓN: No hay ninguna programación lista para emitir.',
-        after: 'ATENCIÓN: No había ninguna programación lista para emitir.'
-      }
-    }
-  },
-  programming_days: {
-    until_start: 'días hasta la emisión de la programación',
-    remaining: 'días restantes de emisión'
-  },
-  actions: 'Acciones',
-  stop: 'Detener',
-  planning_type: 'Tipo de planificación',
-  max_interval: 'Tiempo máximo entre reproducciones',
-  comprobations: {
-    language: 'Comprobación de idiomas',
-    saturation: 'Comprobación de saturación',
-    conflicts: 'Comprobación de conflictos',
-    success: {
-      language: 'Todos los espacios coinciden con el idioma del audio de la programación.',
-      saturation: 'Todos los espacios pesentan una saturación baja o moderada.',
-      conflicts: 'Ninguno de los espacios presenta conflicto de planificación de comunicaciones.'
-    },
-    resolved: {
-      language: 'Todos los espacios coinciden con el idioma del audio de la programación.',
-      saturation: 'La selección de espacios se ha revisado y refinado para ajustar la inclusión de espacios con alta saturación de comunicación.',
-      conflicts: 'Se han revisado las prioridades de las campañas en conflicto para ajustar las proporciones de emisiones.'
-    }
-  },
-  short_percentage: 'Falta un {percentage}% para el 100% del total',
-  exceeded_percentage: 'Ha sobrepasado un {percentage}% del 100% del total',
-  notify_ok_csv_loaded: 'El CSV se ha cargado correctamente',
-  confirm_audio_swap: '¿Está seguro de que desea sustituir este audio?',
-  validation_multiple_of_ten: 'Por favor, ingrese un múltiplo de 10',
-  no_audio_found: 'No se encontraron audios',
-  notify_ok_audio_uploaded: 'El audio se ha subido correctamente',
-  programming_status_actions: {
-    swap_audio: 'Sustituir audio',
-    edit: 'Editar programación',
-    clone: 'Clonar programación',
-    ready: 'Lista para emitir',
-    pause: 'Pausar programación',
-    report: 'Informe de emisión',
-    cancel: 'Cancelar programación',
-    enable: 'Reactivar programación',
-    delete: 'Eliminar programación'
-  },
-  planning_types: {
-    timeframe: 'Por franja horaria',
-    hours: 'En horas específicas'
-  },
-  hour: 'Hora',
-  save_as_draft: 'Guardar como borrador',
-  save_and_enable: 'Guardar y activar',
-  save_and_new: 'Guardar y nuevo',
-  error_hours_equal: 'Todas las horas deben ser distintas',
-  error_hours_before_opening_time: 'No pueden haber horas anteriores a la hora de apertura',
-  error_hours_after_closing_time: 'No pueden haber horas posteriores a la hora de cierre',
-  error_no_start_time: 'Debe incluír una hora de inicio',
-  error_no_end_time: 'Debe incluir una hora de fin',
-  error_invalid_date_range: 'Por favor, ingrese un rango de tiempo válido',
-  error_invalid_time_hour_range: 'El rango de tiempo válido no debe ser menor a 1h',
-  error_frequency_multiple_of_ten: 'La frecuencia debe ser un múltiplo de 10',
-  error_interval_multiple_of_ten: 'El intérvalo debe ser un múltiplo de 10',
-  error_frequency_required: 'La frecuencia es un campo requerido',
-  notify_ko_no_reports_available: 'No hay reportes disponibles',
-  notify_ko_reports_no_interval: 'Seleccione un intervalo de fechas',
-  no_options_available: 'Sin opciones disponibles',
-  swap_audio: 'Sustituír audio',
-  uploaded: 'Subido',
-  used: 'Usado',
-  no: 'No',
-  save: 'Guardar',
-  filter_by_language: 'Filtrar por idioma',
-  error_file_invalid_format: 'La extensión del archivo debe ser {0}',
-  error_same_timeframe: 'La hora de inicio y de fin no pueden ser iguales',
-  error_invalid_start_time: 'La fecha de inicio es inválida',
-  error_invalid_end_time: 'La fecha de fin es inválida',
-  error_hours_invalid: 'Verifique que todas las horas son válidas',
-  change_language: 'Cambiar idioma',
-  replace_file: 'Reemplazar archivo',
-  drop_or_click: 'Arrastre un archivo o haga click para seleccionar desde su ordenador',
-  drop_file_to_upload: 'Suelte el archivo para cargarlo',
-  notify_ok_replace_audio: 'El archivo de audio se ha reemplazado correctamente',
-  notify_ok_change_audio_language: 'El idioma del audio se ha cambiado correctamente',
-  file_selected: 'Archivo seleccionado: {0}',
-  resolve_audio_conflict: 'Solucionando conflicto de idiomas',
-  resolve_audio_conflict_description: 'Desde aquí podrás seleccionar o subir un audio para ser asignado a los espacios que lo requieran en una nueva programación.',
-  average_saturation_rate: 'tasa media de saturación',
-  daily_saturation_of_spaces: 'Saturación diaria de los espacios seleccionados',
-  check_space_saturations: 'Revisar saturación de espacios',
-  check_space_saturations_description: 'Desde aquí podrás observar la saturación de los espacios seleccionados para esta programación y modificar dicha selección.',
-  estimated_emissions: 'emisiones estimadas',
-  check_planning_conflicts: 'Revisar conflictos de planificación',
-  check_planning_conflicts_description: 'Desde aquí podrás comprobar el alcance de los conflictos entre la programación actual y aquellas con las que coincide en planificación y espacios. Ajustando la prioridad de las programaciones puedes gestionar la proporción del reparto de reproducciones en la resolución de conflictos.',
-  programming: {
-    num: 'Programación|Programaciones',
-    current: 'Programación actual',
-    details: 'Detalle de programación para comunicación "{0}"',
-    conflicted: 'Programaciones en conflicto',
-    update: 'Actualizar programación',
-    edit: 'Editando programación {0}',
-    conflicts: 'Existen conflictos en la programación',
-    new_for_communication: 'Nueva Programación para comunicación "{0}"',
-    no_for_communication: 'No hay ninguna programación para esta comunicación',
-    error: 'No ha sido posible {action} la programación',
-    success: 'La programación se ha {action} correctamente',
-    confirm_delete: '¿Está seguro de que desea eliminar esta programación?',
-    confirm_cancel: '¿Está seguro de que desea cancelar esta programación?'
-  },
-  communications: 'Comunicaciones',
-  planned_plays_vs_current: 'Esta programación ha planificado {0} reproducciones, pero con los conflictos actuales serán {1}',
-  check_planning_conflicts_info: 'Para gestionar los conflictos a nivel de espacio, accede desde la sección Centros del menú principal.',
-  restore_original_priorities: 'Restaurar prioridades originales',
-  on_conflict: 'En conflicto durante {0} días en {1} espacios.',
-  check_again: 'Volver a revisar',
-  ends_today: '¡Termina hoy!',
-  logo: 'Logo',
-  profile_picture: 'Imagen de perfil',
-  plan_information: 'Información del plan',
-  plan_picture: 'Imagen del plan',
-  companies_information: 'Información  de centros de facturación',
-  templates: 'Plantillas',
-  download_template: 'Descargar plantilla',
-  upload_template: 'Subir plantilla',
-  notify_ko_no_template_available: 'No hay una plantilla disponible',
-  upload_audio: 'Subir audio',
-  uploaded_in: 'Subido en',
-  filename: 'Nombre de archivo',
-  change_audio_language_warning: 'El cambio se reflejará en toda la plataforma, pudiendo generar nuevos conflictos no detectados en las publicidades. ¿Desea continuar?',
-  warning: 'Advertencia',
-  batch_upload: 'Carga masiva',
-  batch_register: 'Registrar en lote',
-  batch_select: 'Selección masiva',
-  notify_ko_select_file: 'Hubo un problema, debe seleccionar un archivo',
-  notify_ko_upload_csv: 'Hubo un problema, debe seleccionar un archivo de tipo .csv',
-  alarms: {
-    num: 'Alarma | Alarmas',
-    create: 'Crear alarma',
-    edit: 'Editar alarma',
-    no: 'No se encontraron alarmas',
-    information: 'Información de la alarma',
-    select_centers_for: 'Seleccione los centros donde se lanzará la alarma {0}.',
-    error: 'No ha sido posible {action} la alarma',
-    success_launch: 'Se ha lanzado la alarma exitosamente',
-    success: 'La alarma se ha {action} correctamente',
-    confirm_delete: '¿Está seguro de que quiere eliminar la alarma?'
-  },
-  interval_minutes: 'Intervalo (minutos)',
-  play_at: 'Hora de reproducción',
-  mute_all_channels: 'Silenciar canales',
-  mute: 'Silenciar',
-  ok: 'Ok',
-  empty: 'Vacío',
-  view_map: 'Ver mapa',
-  repetitions: 'Repeticiones',
-  notify_ko_play_audio: 'No se puedo reproducir el archivo de audio',
-  close: 'Cerrar',
-  next: 'Siguiente',
-  previous: 'Anterior',
-  resolve_audio_conflict_for_language: 'Solucionando conflicto para idioma "{0}"',
-  simulating: 'Simulando',
-  device: 'Dispositivo',
-  hardware_model: 'Modelo HW',
-  source: 'Origen',
-  severity: 'Severidad',
-  emission_date: 'Fecha de emisión',
-  percent: 'Porcentaje',
-  songs: 'Canciones',
-  mix: 'Mezcla',
-  mixed_channels: {
-    list: 'Canal mix|Canales mix',
-    create: 'Crear canal mix',
-    edit: 'Editar canal mix',
-    information: 'Información del canal mix',
-    description: 'Este es un canal mix en donde se podrá agregar varios canales',
-    mix: 'Mezcla de canales',
-    confirm_delete: '¿Está seguro de que quiere eliminar el canal mix?',
-    error: 'No ha sido posible {action} el canal mix',
-    success: 'El canal mix se ha {action} correctamente',
-    channel_count: 'Cantidad de canales',
-    time: 'Tiempo',
-    playing: 'de reproducción'
-  },
-  no_music_to_play: 'No hay música que reproducir',
-  deactivate: 'Desactivar',
-  activate: 'Activar',
-  scheduled: 'Programado',
-  search: 'Buscar',
-  upload_cover_page: 'Sube una carátula',
-  music: 'Cancion|Canciones',
-  error_frequency_multiple_of_five: 'La frecuencia debe ser un múltiplo de 5',
-  error_interval_multiple_of_five: 'El intérvalo debe ser un múltiplo de 5',
-  error_day_schedule_full: 'El horario del día se encuentra lleno',
-  establish: 'Establecer',
-  error_empty_schedules: 'La programación no debe estar vacías',
-  enable: 'Habilitar',
-  launch: 'Lanzar',
-  select_centers_and_spaces: 'Seleccionar centros y espacios',
-  select: 'Seleccionar',
-  select_all: 'Seleccionar todo',
-  days: 'Dias',
-  add_demo_days: 'Añadir días de demo',
-  is_invoiceable: '¿Facturar?',
-  add_demo_days_question: '¿Cuántos días de demo desea agregar?',
-  add_demo_days_error: 'Ocurrió un error al agregar días de demo',
-  add_demo_days_success: 'Se ha agregado días de demo con éxito',
-  week_days: {
-    sunday: 'Domingo|Dom',
-    monday: 'Lunes|Lun',
-    tuesday: 'Martes|Mar',
-    wednesday: 'Miércoles|Mié',
-    thursday: 'Jueves|Jue',
-    friday: 'Viernes|Vie',
-    saturday: 'Sabado|Sab'
-  },
-  register: 'Registrar',
-  scan_qr_code: 'Escanee el código en pantalla',
-  scan_qr_code_camera: 'Para escanear el código en pantalla necesita proporcionar permisos de uso de cámara.',
-  scan_qr_code_img: 'Si no puede escanear el código intente manualmente subiendo una imagen del código QR.',
-  open_camera: 'Abrir cámara',
-  identifying: 'Identificación',
-  upload_qr: 'Subir QR',
-  is_holidays: '¿Son vacaciones?',
-  date: 'Fecha',
-  time: {
-    start_time: 'Hora inicial',
-    end_time: 'Hora final'
-  },
-  all_good: 'Todo correcto',
-  serial_number: 'Número de serie',
-  model: 'Modelo',
-  version: 'Versión',
-  orientation: 'Orientación',
-  discharge_date: 'Fecha de alta',
-  leaving_date: 'Fecha de baja',
-  portrait: 'Retrato',
-  landscape: 'Paisaje',
-  invalid_qr: 'Código QR inválido',
-  incomplete_registration: 'Registro incompleto',
-  advertising: 'Publicidad',
-  icon: 'Icono',
-  internal_coms: {
-    num: 'Comunicación en punto de venta|Comunicaciones en punto de venta',
-    create: 'Crear comunicación',
-    edit: 'Actualizar comunicación',
-    update: 'Actualizar comunicación',
-    new: 'Nueva comunicación',
-    detail: 'Detalle de comunicación en punto de venta "{0}"',
-    status_actions: {
-      edit: 'Editar comunicación',
-      clone: 'Clonar comunicación',
-      ready: 'Lista para emitir',
-      pause: 'Pausar comunicación',
-      report: 'Informe de emisión',
-      cancel: 'Cancelar comunicación',
-      show_report: 'Informe de emisión',
-      enable: 'Reactivar comunicación',
-      delete: 'Eliminar comunicación'
-    },
-    days: {
-      until_start: 'días hasta la emisión de la comunicación',
-      remaining: 'días restantes de emisión'
-    },
-    error: 'No ha sido posible {action} la comunicación',
-    success: 'La comunicación se ha {action} correctamente',
-    confirm_cancel: '¿Está seguro de que desea cancelar esta comunicación?',
-    confirm_delete: '¿Está seguro de que desea eliminar esta comunicación?'
-  },
-  programming_status: {
-    titles: {
-      draft: 'Borrador',
-      active: {
-        before: 'Lista para emitir',
-        during: 'En emisión',
-        after: 'Finalizada'
-      },
-      paused: 'En pausa',
-      paused_internal_com: 'Campaña en pausa',
-      cancelled: 'Cancelada'
-    },
-    descriptions: {
-      draft: {
-        before: 'Esta programación no se emitirá cuando llegue la fecha de inicio a menos que se marque como lista para emitir.',
-        during: 'Esta programación no se está emitiendo porque la programación nunca se marcó como lista para emitir.',
-        after: 'Esta programación no se emitió porque nunca se marcó como lista para emitir.'
-      },
-      active: {
-        before: 'Esta programación se emitirá cuando llegue la fecha de inicio.',
-        during: 'Esta programación se está emitiendo correctamente',
-        after: 'Esta programación se ha emitido correctamente'
-      },
-      paused: {
-        before: 'Esta programación no se emitirá cuando llegue la fecha de inicio a menos que se marque como lista para emitir.',
-        during: 'Esta programación no se está emitiendo porque se marcó como pausada.',
-        after: 'Esta programación dejó de emitirse porque se marcó como pausada.'
-      },
-      paused_internal_com: {
-        before: 'Esta programación no se emitirá cuando llegue la fecha de inicio a menos que la comunicación esté lista para emitir.',
-        during: 'Esta programación no se está emitiendo porque la comunicación está pausada.',
-        after: 'Esta programación dejó de emitirse porque la comunicación se marcó como pausada.'
-      },
-      cancelled: {
-        before: 'Esta programación ha sido cancelada y no se emitirá.',
-        during: 'Esta programación ha sido cancelada y no se está emitiendo.',
-        after: 'Esta programación fue cancelada y, o bien nunca se emitió, o dejó de emitirse.'
-      }
-    },
-    actions: {
-      change_audio: 'Sustituir audio',
-      edit: 'Editar programación',
-      clone: 'Clonar programación',
-      ready: 'Lista para emitir',
-      pause: 'Pausar programación',
-      report: 'Informe de emisión',
-      cancel: 'Cancelar programación'
-    }
-  },
-  enabled: 'Activada',
-  brand: 'Marca',
-  working: 'En funcionamiento',
-  management: 'Gestión',
 
-  onboarding: {
-    title: 'Ya casi tienes lista tu cuenta de Flux Play',
-    description: 'Vamos a terminar de configurar tu cuenta para que puedas comenzar a utilizar Flux enseguida. Sólo nos quedan cuatro sencillos pasos:',
-    personal: {
-      title: 'Datos profesionales',
-      description1: 'Enim eiusmod exercitation aliqua sit enim ut mollit proident. Aliqua ut tempor proident quis et qui enim excepteur occaecat ipsum veniam velit est.',
-      description2: 'Más tarde podrás cambiarlos desde Mi perfil.'
+  hero: {
+    title: 'El hilo musical como no habías visto antes',
+    description: 'FLUX Play es la plataforma que permite controlar la ambientación musical de tu negocio como no habías visto antes. Mejora la experiencia de compra y construye tu imagen sonora de marca desde un software online de última generación.',
+    tryNow: 'Pruébalo ahora',
+    watchTheVideo: 'Mira el vídeo'
+  },
+
+  advantages: {
+    advantages: 'Ventajas',
+    title: 'Música sin cortes, flexibilidad sin límites',
+    description: 'FLUX Play ha sido creado pensando en ti, para facilitarte la tarea de ambientar musicalmente tus establecimientos, con un sistema de descarga que evita cortes y con todas las funcionalidades que te permitirán gestionar el servicio de manera eficiente ¿Quieres programar el apagado y encendido de la música? ¿Cambiar de canal automáticamente en función de la hora o el día? ¿Programar mensajes de audio en megafonía? Simplemente hazlo. Así podrás dedicar más tiempo a lo que realmente importa: tu negocio.',
+    action: 'Descubre más',
+    customChannels: {
+      title: 'Hilo musical a la carta',
+      description: 'Elige la música entre más de 70 canales, cada uno con una temática diferente. Puedes dar forma a tu propio estilo mezclando varios de ellos.'
     },
-    center_and_space: {
-      first_center: {
-        title: 'Crea tu primer centro',
-        description1: 'En Flux Play llamamos centros a los diferentes locales o ubicaciones que tenga tu negocio. Desde aquí podrás crear tu primer centro.',
-        description2: 'Más tarde podrás gestionarlos y crear nuevos desde la sección Centros y Espacios.'
-      },
-      first_space: {
-        title: 'Crea un espacio',
-        description1: 'En Flux Play llamamos espacios a las zonas separadas que puede haber en cada centro. Desde aquí vamos a crear un único espacio para tu primer centro.',
-        description2: 'Más tarde podrás gestionarlos y crear nuevos desde la sección Centros y Espacios.'
-      },
-      create: 'Creación de centro y espacio',
-      description: 'El centro {center} con el espacio {space} ha sido creado con éxito y están listos para utilizarse.'
+    internalCommunications: {
+      title: 'Escalable y centralizado',
+      description: 'No importa cuántos establecimientos tengas. Podrás gestionar todo de manera centralizada, así como añadir y eliminar centros cuando lo necesites.'
     },
-    catalog: {
-      title: 'Elige tu catálogo de música',
-      description1: 'En Flux Play utilizamos dos catálogos de música diferentes. El uso de cada uno de ellos está sujeto a la obtención de una licencia.',
-      description2: 'Sólo se puede seleccionar un catálogo. Cuando lo hagas te enviaremos un email con instrucciones sobre cómo conseguir la licencia.',
-      sgae: {
-        title: 'Catálogo SGAE-AGEDI',
-        description1: 'Con unas 5.000 canciones incluídas, donec ullamcorper nulla non metus auctor fringilla.',
-        description2: 'El coste de una licencia para este catálogo oscila en torno a XX€ por espacio, dependiendo de varius blandit sit amet non magna.'
-      },
-      soundreef: {
-        title: 'Catálogo Soundreef',
-        description1: 'Con unas 5.000 canciones incluídas, donec ullamcorper nulla non metus auctor fringilla.',
-        description2: 'El coste de una licencia para este catálogo oscila en torno a XX€ por espacio, dependiendo de varius blandit sit amet non magna.'
-      },
-      help_me_decide: 'Necesito ayuda para decidir'
+    announcements: {
+      title: 'Mensajes de audio',
+      description: 'Puedes convertir el hilo musical de tu negocio en una radio in store en que crear campañas publicitarias para informar a tus clientes y promocionar tus ventas.'
     },
-    billing: {
-      title: 'Indica los datos de facturación',
-      description1: 'Lorem ipsum dolor sit amet.',
-      description2: 'Más tarde podrás cambiarlos desde la sección Facturación.'
+    multispace: {
+      title: 'Música legal',
+      description: 'Tenemos repertorio formado por música de SGAE-AGEDI-AIE y otras entidades de gestión. Te asesoramos para que no tengas que preocuparte por ningún tema legal.'
+    }
+  },
+
+  channels: {
+    channels: 'Canales de Música',
+    title: 'Hilo musical a la carta',
+    description: 'Tú eliges la música desde nuestro catálogo, cada canal tiene una temática diferente y está constantemente actualizado. Puedes dar forma a tu propio estilo mezclando varios canales, incluso disponer de música para festividades como Navidad, Halloween, Carnavales…',
+    next: 'Comunicaciones',
+    features: [
+      { bold: 'Elige', regular: 'entre más de 70 canales.' },
+      { bold: 'Mezcla', regular: 'varios canales para un resultado único.' },
+      { bold: 'Programa', regular: 'cambios de canal según la hora.' }
+    ]
+  },
+
+  communications: {
+    communications: 'Comunicación en el punto de venta',
+    title: 'Programa campañas de anuncios fácilmente',
+    description: 'Hemos diseñado la programación de audios de manera que te sea más sencillo crearlas campañas y gestionar varias al mismo tiempo. Hemos implementado herramientas que solucionan conflictos de programación y te facilitan el trabajo de crear campañas cuando tienes que programar muchos mensajes a la vez.',
+    next: 'Avisos',
+    features: [
+      { bold: 'Planifica', regular: 'la emisión de cuñas.' },
+      { bold: 'Conoce', regular: 'la proporción de anuncios y música.' },
+      { bold: 'Controla', regular: 'los informes de emisión.' }
+    ]
+  },
+
+  announcements: {
+    announcements: 'Avisos programados',
+    title: 'Automatiza tus mensajes',
+    description: 'Olvídate de anunciar los recordatorios de cierre, las recomendaciones de seguridad o el aviso de eventos periódicos. Programa avisos recurrentes a horas específicas y deja que Flux Play trabaje para ti.',
+    next: 'Music App',
+    features: [
+      { bold: 'Especifica', regular: 'las horas o la frecuencia de aviso.' },
+      { bold: 'Programa', regular: 'fechas de inicio y fin de la automatización.' },
+      { bold: 'Actualiza', regular: 'los mensajes sin perder la programación.' },
+      { bold: 'Controla', regular: 'con informes de emisión.' }
+    ]
+  },
+
+  multispace: {
+    multispace: 'FLUX Music App',
+    title: 'Convierte cualquier dispositivo en un reproductor',
+    description: 'Instala nuestra APP en un ordenador, tablet o smartphone y podrás reproducir la música desde allí. La APP vinculará el dispositivo con tu cuenta de FLUX Play, donde podrás gestionar la música de todos los dispositivos que tengan instalada la APP.',
+    features: [
+      { bold: 'Gestion', regular: 'remota desde cualquier lugar.' },
+      { bold: 'Descarga', regular: 'de contenido para reproducir sin cortes.' },
+      { bold: 'Autoarranque', regular: '' }
+    ]
+  },
+
+  useCases: {
+    useCases: 'Casos de uso',
+    title: 'Sea cual sea tu negocio, FLUX Play es tu música',
+    description: 'FLUX Play se adapta a las particularidades de cada empresa, desde una cadena de supermercados que necesita programar cuñas publicitarias en todos sus centros, hasta una línea de hoteles que requiere ambientar las diferentes zonas de sus hoteles con música acorde a cada estancia.',
+    askForDemo: 'Pide una demostración',
+    chatWithRepresentatives: 'Chatea con los representantes',
+    carousel: {
+      libraries: 'Librerías',
+      saloon: 'Peluquerías',
+      artExpositions: 'Exposiciones',
+      shopping: 'Alimentación',
+      fashion: 'Moda',
+      gym: 'Gimnasio',
+      malls: 'Centros comerciales',
+      hotels: 'Hoteles',
+      restaurants: 'Restaurantes'
+    }
+  },
+
+  pricing: {
+    pricing: 'Precios',
+    title: 'Plataforma FLUX Play®',
+    description: 'El servicio de música a través de FLUX Play se comercializa con un sistema de licencias de facturación mensual sin permanencia. Cada licencia da derecho a instalar FLUX Music App en un dispositivo a la vez. Flux Music App es el software necesario para reproducir música, por lo que se precisa una licencia por cada punto en el que se quiera reproducir música. Además, la App vincula, a través de Internet, cada dispositivo con la plataforma FLUX Play, lo que permite gestionar lo que suena en cada dispositivo en la que esté instalada.',
+    select: 'Seleccionar',
+    helpMeDecide: 'Ayúdame a decidir',
+    month: '/mes',
+    helpMeChoose: 'Ayúdame a decidir',
+    choosingAnual: 'eligiendo el pago anual',
+    details: 'Ver detalles',
+    basic: {
+      title: 'Plan Lite',
+      description: 'Ideal para negocios que sólo quieren poner música en su local.',
+      features: {
+        all: 'Acceso a todo el catálogo de música',
+        offline: 'Reproducción Offline',
+        channelsUpdate: 'Actualización de canales de música de catálogo',
+        support: 'Soporte básico',
+        player: 'Reproductor virtual'
+      }
     },
-    payment: {
-      title: 'Indica un medio de pago',
-      description1: 'Lorem ipsum dolor sit amet.',
-      description2: 'Más tarde podrás cambiarlos desde la sección Facturación.'
+    advanced: {
+      title: 'Plan Smart',
+      description: 'Perfecta para aprovechar al máximo el audio en tu negocio.',
+      features: {
+        all: 'Acceso a todo el catálogo de música',
+        offline: 'Reproducción Offline',
+        channelsUpdate: 'Actualización de canales de música de catálogo',
+        support: 'Soporte básico',
+        player: 'Reproductor virtual',
+        musicProgramming: 'Programación horaria de la música',
+        audioMessagesProgramming: 'Programación de mensajes de audio'
+      }
     },
-    finish: {
-      catalog: {
-        title: 'Selección de catálogo musical',
-        description: 'Contarás con todas las canciones y canales de Soundreef. Asegúrate de conseguir la licencia adecuada según te indicamos en el email que te hemos enviado.'
+    premium: {
+      title: 'Plan Pro',
+      description: 'Creado para los usuarios más exigentes con la calidad de sonido.',
+      features: {
+        all: 'Incluye todo el plan Smart más:',
+        player: 'Player TSLab',
+        support: 'Soporte avanzado',
+        description: 'Nuestro dispositivo ‘Always On’ automatiza completamente el servicio ya que no depende de ser encendido como un PC o tablet. Asegura la máxima calidad de sonido e incluye mantenimiento y sustitución en caso de avería.'
+      }
+    },
+    features: {
+      users: 'usuario incluído | usuarios incluídos',
+      spaces: 'espacio incluído | espacios incluídos',
+      usersMultiple: 'Múltiples usuarios',
+      spacesMultiple: 'Múltiples espacios',
+      personalizedPricing: 'Pricing personalizado',
+      systemIntegration: 'Integración de sistemas',
+      musicCatalog: 'Acceso a todo el catálogo de música',
+      musicCatalog2: 'Catálogo musical completo',
+      allAdvanced: 'Incluye todo el plan Smart más:',
+      mediaInstalations: 'Instalaciones multimedia',
+      solutions: 'Soluciones exclusivas',
+      priorityService: 'Servicio técnico prioritario',
+      support: 'Soporte 24/7',
+      centralizedControl: 'Control centralizado',
+      reportEmission: 'Emisión de informes',
+      virtualPlayer: 'Reproductor virtual',
+      billingPanel: 'Panel de facturación',
+      onlineSupport: 'Centro de soporte online',
+      hourlyProgramming: 'Programación horaria',
+      channelMix: 'Mezcla de canales',
+      communications: 'Comunicación en el punto de venta',
+      announcements: 'Programación de avisos',
+      alarms: 'Programación de alarmas',
+      advancedSupport: 'Soporte técnico avanzado',
+      rm8: 'Alquiler de player RM8'
+    },
+
+    featureDescriptions: {
+      musicCatalog: 'Acceso a todos los canales de música de la sociedad de autores elegida (SGAE, Soundreef o similar). Actualización automática y periódica de los canales musicales.',
+      centralizedControl: 'Permite visualizar el estado de tus dispositivo, programarlos y gestionarlos de forma remota desde una única herramienta.',
+      reportEmission: 'Obtén informes de la playlist que ha sonado durante el día, los mensajes de audio reproducidos y el histórico de eventos.',
+      virtualPlayer: 'Reproducción desde cualquier dispositivo con conexión a Internet (Ordenador, tablet o smartphone) a través de Web o App.',
+      billingPanel: 'Consulta de cuotas y descarga de facturas del servicio desde la cuenta de usuario.',
+      onlineSupport: 'Acceso a manuales, preguntas frecuentes y videotutoriales desde la cuenta de usuario de la plataforma.',
+      licensing: 'Todos los planes incluyen la Licencia Internacional de Reproducción mecánica correspondiente a TSLab y otorgada por las entidades de gestión para autorizar la reproducción de contenidos musicales, en la que se certifica que en el desarrollo de su actividad cuenta con todos los derechos, licencias y autorizaciones necesarias respecto a todas las obras musicales de las que hace uso.',
+      hourlyProgramming: 'Permite programar cuando sonarán los canales que se deseen, así como el encendido y apagado automático de la música',
+      channelMix: 'Permite mezclar varios canales seleccionando el porcentaje de cada canal para crear canales personalizados.',
+      communications: 'Programa cuñas publicitarias para promocionar tus productos o mensajes informativos en función de tus necesidades.',
+      announcements: 'Mensajes de aviso programables para informar a clientes o empleados.',
+      alarms: 'Mensajes de alarma para ser activados manualmente en caso de emergencia.',
+      advancedSupport: 'Ticketing y asistencia telefónica 24/7. Resolución de indencias en 24-48 horas.',
+      rm8: 'El bajo consumo de energía los player permite que estén encendido 24/7, eliminando la necesidad de que tenga que ser encendido manualmente, lo que automatiza completamente el servicio. Cuenta con mantenimiento y recambio en caso de avería.'
+    }
+  },
+
+  specialProjects: {
+    title: 'Proyectos especiales',
+    description: 'Si eres una gran cadena o tienes proyecto con necesidades específicas, nuestro equipo de asesores trabaja contigo para darte la solución perfecta a tu medida.',
+    contactAnAdviser: 'Contacta con un asesor',
+    contactDescription: 'Un asesor utilizará tus datos para concertar una visita contigo y prepararse para acompañarte y descubrir la mejor solución para tus necesidades',
+    askForDemo: 'Pide una demostración',
+    askPrices: 'Consultar precios',
+    features: {
+      multipleUsers: 'Múltiples usuarios',
+      multipleSpaces: 'Múltiples espacios',
+      media: 'Instalaciones multimedia',
+      integration: 'Integración de sistemas a medida',
+      solutions: 'Soluciones exclusivas',
+      service: 'Servicio técnico y soporte prioritario'
+    }
+  },
+
+  satisfiedClients: 'Clientes satisfechos',
+  representative: 'Representante',
+
+  freeTrial: {
+    reasons: 'Descúbrelo',
+    tryOneMonth: '1 mes de prueba gratis',
+    description: 'Regístrate y úsalo durante un mes totalmente gratis y sin compromiso.',
+    tryNow: 'Pruébalo ahora'
+  },
+
+  footer: {
+    theSensoryLab: 'Un servicio de The Sensory Lab',
+    description: `Somos integradores de soluciones audiovisuales y marketing sensorial. Te ayudamos a potenciar
+        tu identidad de marca y a generar una innovadora experiencia de compra, mediante Audiobranding,
+        Digital Signage y Marketing Olfativo.`,
+    links: {
+      information: 'Información',
+      helpCenter: 'Centro de soporte',
+      legal: 'Aviso legal',
+      contact: 'Contacto',
+      cancelationPolicy: 'Política de cancelación'
+    }
+  },
+
+  demo: {
+    shop: 'Local comercial',
+    currentlyPlaying: 'Reproduciendo el canal {0}',
+    duration: '{0} de duración',
+    remaining: 'Quedan {0}',
+    nowPlaying: 'Ahora sonando',
+    channels: 'Canales',
+    nextSongs: 'Próximas canciones',
+    noSongs: 'No hay canciones disponibles',
+    suggestedChannels: 'Canales Sugeridos',
+    songs: '{0} Cancion | {0} Canciones',
+    songTitle: 'Título',
+    songArtist: 'Artista'
+  },
+
+  recommender: {
+    recommender: 'Recomendador de planes',
+    title: 'Encuentra el plan perfecto para ti.',
+    description: 'Flux es flexible y se adapta a todo tipo de negocio. En menos de un minuto podemos proponerte un plan para comenzar ya a disfrutar de las ventajas.',
+    storeCount: {
+      title: '¿Cuántos locales tienes?',
+      one: 'Sólo un local',
+      oneWithIndependentSpaces: 'Un local con espacios independientes',
+      twoToFive: 'Entre 2 y 5 locales',
+      sixOrMore: 'Más de 6 locales'
+    },
+    toDo: {
+      title: '¿Qué quieres hacer con tu local?',
+      backgroundMusic: 'Poner música de ambientación.',
+      audioPromos: 'Anunciar promociones de audio.',
+      programAnnouncements: 'Programar avisos en ciertas horas.',
+      megafony: 'Conectar la megafonía con otros sistemas.'
+    },
+
+    results: {
+      wePropose: 'Te proponemos {type}',
+      basic: {
+        title: 'Plan Lite',
+        description: 'Ideal para negocios que sólo quieren poner música en su local, el Plan Lite te ofrece acceso completo a todo el catálogo de música de Flux Play. Además, incluye algunas opciones para explorar la comunicación con tus clientes a través de la megafonía.'
       },
-      billing: {
-        title: 'Datos de facturación',
-        description: 'Tus datos de facturación y el medio de pago se han guardado en nuestros sistemas.'
+      advanced: {
+        title: 'Plan Smart',
+        description: 'Perfecta para aprovechar al máximo el audio en tu negocio, desde la ambientación musical con el catálogo completo de Flux Play hasta la gestión de comunicaciones, avisos y alertas dentro de los espacios donde están tus clientes.'
+      },
+      premium: {
+        title: 'Plan Pro',
+        description: 'Creado para los usuarios más exigentes con la calidad de sonido, el Plan Pro incluye la ambientación musical y la gestión de comunicaciones, avisos y alertas. Y por si fuera poco, incluye un reproductor físico que garantiza la mejor calidad de servicio.'
+      },
+      special: {
+        title: 'Proyecto especial',
+        plural: 'Proyectos especiales',
+        checkPricing: 'Consultar precios',
+        description: 'Si eres una gran cadena o tienes proyecto con necesidades específicas, nuestro equipo de asesores trabaja contigo para darte la solución perfecta a tu medida. Contacta con nosotros para comenzar un estudio personalizado.'
+      },
+      actions: {
+        signOnNow: 'Inscribirse ahora',
+        seeMorePlans: 'Ver otros planes',
+        chooseAnother: 'Elegir otro plan',
+        checkFaq: 'Consulta las preguntas frecuentes',
+        moreInfo: 'Más información',
+        createAccount: 'Crear una cuenta'
+      },
+      specialProjects: {
+        title: 'Y además, hacemos proyectos especiales a medida',
+        description: 'Si eres una gran cadena o tienes proyecto con desafíos específicos, nuestro equipo de asesores trabaja contigo para crear la solución perfecta.'
       }
     }
   },
-  all_fields_required: 'Todos los campos son obligatorios',
-  center_name: 'Nombre del centro',
-  space_name: 'Nombre del espacio',
-  holder_card: 'Titular de la tarjeta',
-  credit_card_number: 'Número de tarjeta de crédito',
-  expiry_date: 'Fecha de caducidad',
-  cvv: 'CVV',
-  and_n_more: 'y {n} más',
-  active_today: 'programaciones activas hoy',
-  confirm_data: 'Confirmo que los datos son correctos',
-  back_edit: 'Volver a editar',
-  center_selection_template: 'Plantilla de selección de centros',
-  center_or_space_code: 'Codigo de centro/espacio'
+  haveQuestions: '¿Tienes dudas?',
+  imReady: '¡Estoy listo!',
+  a: 'un',
+  the: 'el',
+
+  register: {
+    register: 'Registro',
+    title: 'Crea tu cuenta.',
+    description: 'Tus datos servirán para crear tu cuenta y asociarla a tu negocio. Al continuar recibirás un enlace en tu email para acceder a Flux Play y comenzar a utilizarlo hoy mismo.',
+    check: {
+      title: 'Comprueba tu correo',
+      description: 'Tu cuenta ha sido creada. Hemos enviado un email a tu correo con las instrucciones para terminar el proceso y empezar a utilizar Flux.'
+    },
+    plans: {
+      selectAPlan: 'Selecciona tu plan',
+      description: 'Flux Play tiene planes para todas las necesidades. Según el número de locales y el uso que quieras dar al audio en tu negocio te proponemos tres opciones.'
+    }
+  },
+
+  downloads: {
+    title: 'Convierte cualquier dispositivo en un reproductor FLUX',
+    description: 'Descarga la aplicación FLUX Music APP en tu ordenador, móvil o tablet. Se convertirá en un reproductor de música para todos sus establecimientos. Podrás descargarla en tantos dispositivos como licencias contrates y, además, tendrás la capacidad de gestionar lo que suena en cada uno de ellos desde la plataforma FLUX Play de manera remota',
+    downloadApp: 'Descargar Flux App',
+    forPlatform: 'para Android',
+    anotherDevice: '¿Tienes otro dispositivo?'
+  },
+
+  tradeName: 'Nombre comercial',
+  businessSector: 'Sector comercial',
+  contactPerson: 'Persona de contacto',
+  businessPosition: 'Cargo',
+  name: 'Nombres',
+  surname: 'Apellidos',
+  email: 'Correo',
+  password: 'Contraseña',
+  confirmPassword: 'Confirmar Contraseña',
+  phone: 'Teléfono',
+  country: 'País',
+  city: 'Ciudad',
+  iAccept: 'He leído y acepto las',
+  conditions: 'condiciones de uso',
+  andThe: 'y la',
+  privacyPolicy: 'política de privacidad',
+  continue: 'Continuar',
+  andNow: '¿Y ahora?',
+  knowTheHelpCenter: 'Conoce el centro de ayuda',
+  downloadFluxApp: 'Descarga la Flux APP',
+  validation: {
+    errorRequired: 'El campo es requerido',
+    errorEmail: 'El formato de email no es válido',
+    errorPassword: 'Las contraseñas no son iguales',
+    errorEmailAlreadyTaken: 'El correo ya está tomado'
+  },
+  legal: {
+    title: 'Aviso legal',
+    question: '¿Tienes alguna duda?',
+    support: 'Consulta nuestro centro de soporte',
+    lssi: {
+      title: 'Ley de los servicios de la sociedad de la información',
+      description: `RADIO AMBIENTE MUSICAL SA, responsable del sitio web, en adelante RESPONSABLE, pone a disposición de los usuarios el presente documento, con el que pretende dar cumplimiento a las obligaciones dispuestas en la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSICE), BOE N.º 166, así como informar a todos los usuarios del sitio web respecto a cuáles son las condiciones de uso.
+      Toda persona que acceda a este sitio web asume el papel de usuario, comprometiéndose a la observancia y cumplimiento riguroso de las disposiciones aquí dispuestas, así como a cualquier otra disposición legal que fuera de aplicación.
+      RADIO AMBIENTE MUSICAL SA se reserva el derecho de modificar cualquier tipo de información que pudiera aparecer en el sitio web, sin que exista obligación de preavisar o poner en conocimiento de los usuarios dichas obligaciones, entendiéndose como suficiente la publicación en el sitio web de RADIO AMBIENTE MUSICAL SA.`
+    },
+    basicInfo: {
+      title: 'Datos identificativos',
+      items: {
+        domain: {
+          title: 'Nombre de dominio',
+          description: 'fluxplay.io'
+        },
+        name: {
+          title: 'Nombre comercial',
+          description: 'FLUX Play'
+        },
+        social: {
+          title: 'Denominación social',
+          description: 'RADIO AMBIENTE MUSICAL SA'
+        },
+        nif: {
+          title: 'NIF',
+          description: 'A08204638'
+        },
+        address: {
+          title: 'Domicilio social',
+          description: 'Calle Marie Curie. Edificio Beta 5-7, 2º 1-2 , 28521 Rivas-Vaciamadrid (MADRID)'
+        },
+        phone: {
+          title: 'Teléfono',
+          description: '913454000'
+        },
+        email: {
+          title: 'Email',
+          description: 'administracion@tslab.es'
+        },
+        registration: {
+          title: 'Inscrita en el registro',
+          description: 'Registro Mercantil de BARCELONA T 25519 , F 53, S 8, H M 459800, I/A'
+        }
+      }
+    },
+    ownership: {
+      title: 'Derechos de propiedad intelectual e industrial',
+      description: `
+        El sitio web, incluyendo a título enunciativo pero no limitativo su programación, edición, compilación y demás elementos necesarios para su funcionamiento, los diseños, logotipos, texto y/o gráficos, son propiedad del RESPONSABLE o, si es el caso, dispone de licencia o autorización expresa por parte de los autores. Todos los contenidos del sitio web se encuentran debidamente protegidos por la normativa de propiedad intelectual e industrial, así como inscritos en los registros públicos correspondientes. Independientemente de la finalidad para la que fueran destinados, la reproducción total o parcial, uso, explotación, distribución y comercialización, requiere en todo caso la autorización escrita previa por parte del RESPONSABLE. Cualquier uso no autorizado previamente se considera un incumplimiento grave de los derechos de propiedad intelectual o industrial del autor.
+        Los diseños, logotipos, texto y/o gráficos ajenos al RESPONSABLE y que pudieran aparecer en el sitio web, pertenecen a sus respectivos propietarios, siendo ellos mismos responsables de cualquier posible controversia que pudiera suscitarse respecto a los mismos. El RESPONSABLE autoriza expresamente a que terceros puedan redirigir directamente a los contenidos concretos del sitio web, y en todo caso redirigir al sitio web principal de thesensorylab.es.
+        El RESPONSABLE reconoce a favor de sus titulares los correspondientes derechos de propiedad intelectual e industrial, no implicando su sola mención o aparición en el sitio web la existencia de derechos o responsabilidad alguna sobre los mismos, como tampoco respaldo, patrocinio o recomendación por parte del mismo.
+        Para realizar cualquier tipo de observación respecto a posibles incumplimientos de los derechos de propiedad intelectual o industrial, así como sobre cualquiera de los contenidos del sitio web, puede hacerlo a través del correo electrónico administracion@tslab.es
+      `
+    },
+    disclamer: {
+      title: 'Excención de responsabilidades',
+      description: `
+        El RESPONSABLE se exime de cualquier tipo de responsabilidad derivada de la información publicada en su sitio web siempre que esta información haya sido manipulada o introducida por un tercero ajeno al mismo.
+      `,
+      cookies: {
+        title: 'Uso de cookies',
+        description: `
+          Este sitio web puede utilizar cookies técnicas (pequeños archivos de información que el servidor envía al ordenador de quien accede a la página) para llevar a cabo determinadas funciones que son consideradas imprescindibles para el correcto funcionamiento y visualización del sitio. Las cookies utilizadas tienen, en todo caso, carácter temporal, con la única finalidad de hacer más eficaz la navegación, y desaparecen al terminar la sesión del usuario. En ningún caso, estas cookies proporcionan por sí mismas datos de carácter personal y no se utilizarán para la recogida de los mismos.
+          Mediante el uso de cookies también es posible que el servidor donde se encuentra la web reconozca el navegador utilizado por el usuario con la finalidad de que la navegación sea más sencilla, permitiendo, por ejemplo, el acceso de los usuarios que se hayan registrado previamente a las áreas, servicios, promociones o concursos reservados exclusivamente a ellos sin tener que registrarse en cada visita.
+          También se pueden utilizar para medir la audiencia, parámetros de tráfico, controlar el progreso y número de entradas, etc., siendo en estos casos cookies prescindibles técnicamente, pero beneficiosas para el usuario. Este sitio web no instalará cookies prescindibles sin el consentimiento previo del usuario.
+          El usuario tiene la posibilidad de configurar su navegador para ser alertado de la recepción de cookies y para impedir su instalación en su equipo. Por favor, consulte las instrucciones de su navegador para ampliar esta información.
+        `
+      },
+      policy: {
+        title: 'Politica de enlaces',
+        description: `
+          Desde el sitio web, es posible que se redirija a contenidos de terceros sitios web. Dado que el RESPONSABLE no puede controlar siempre los contenidos introducidos por terceros en sus respectivos sitios web, no asume ningún tipo de responsabilidad respecto a dichos contenidos. En todo caso, procederá a la retirada inmediata de cualquier contenido que pudiera contravenir la legislación nacional o internacional, la moral o el orden público, procediendo a la retirada inmediata de la redirección a dicho sitio web, poniendo en conocimiento de las autoridades competentes el contenido en cuestión.
+          El RESPONSABLE no se hace responsable de la información y contenidos almacenados, a título enunciativo pero no limitativo, en foros, chats, generadores de blogs, comentarios, redes sociales o cualquier otro medio que permita a terceros publicar contenidos de forma independiente en la página web del RESPONSABLE. Sin embargo, y en cumplimiento de lo dispuesto en los artículos 11 y 16 de la LSSICE, se pone a disposición de todos los usuarios, autoridades y fuerzas de seguridad, colaborando de forma activa en la retirada o, en su caso, bloqueo de todos aquellos contenidos que puedan afectar o contravenir la legislación nacional o internacional, los derechos de terceros o la moral y el orden público. En caso de que el usuario considere que existe en el sitio web algún contenido que pudiera ser susceptible de esta clasificación, se ruega lo notifique de forma inmediata al administrador del sitio web.
+          Este sitio web se ha revisado y probado para que funcione correctamente. En principio, puede garantizarse el correcto funcionamiento los 365 días del año, 24 horas al día. Sin embargo, el RESPONSABLE no descarta la posibilidad de que existan ciertos errores de programación, o que acontezcan causas de fuerza mayor, catástrofes naturales, huelgas o circunstancias semejantes que hagan imposible el acceso a la página web.
+        `
+      },
+      ip: {
+        title: 'Direcciones IP',
+        description: `
+          Los servidores del sitio web podrán detectar de manera automática la dirección IP y el nombre de dominio utilizados por el usuario. Una dirección IP es un número asignado automáticamente a un ordenador cuando este se conecta a Internet. Toda esta información se registra en un fichero de actividad del servidor que permite el posterior procesamiento de los datos con el fin de obtener mediciones únicamente estadísticas que permitan conocer el número de impresiones de páginas, el número de visitas realizadas a los servidores web, el orden de visitas, el punto de acceso, etc.
+        `
+      }
+    },
+    jurisdiction: {
+      title: 'Ley aplicable y jurisdición',
+      description: `
+        Para la resolución de todas las controversias o cuestiones relacionadas con el presente sitio web o de las actividades en él desarrolladas, será de aplicación la legislación española, a la que se someten expresamente las partes, siendo competentes para la resolución de todos los conflictos derivados o relacionados con su uso los Juzgados y Tribunales más cercanos a Rivas-Vaciamadrid.
+      `
+    }
+  }
 };
