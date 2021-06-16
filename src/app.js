@@ -5,32 +5,47 @@
 
 import axios from 'axios';
 
+const formData = new FormData();
+formData.append('param', JSON.stringify({
+  apiID: 'tTqDdxWNUhV4opRfkz20nA9jaQuJyGiP',
+  datos: [
+    { key: 'language', val: 'es' },
+    { key: 'paNumber', val: '4539232076648253' },
+    { key: 'cvc2', val: '377' },
+    { key: 'cardHolderName', val: 'Sofia%20Campos%20Fernandez' },
+    { key: 'dateMonth', val: '03' },
+    { key: 'dateYear', val: '24' }
+  ],
+  method: 'iframe'
+}));
+
 const config = {
   method: 'post',
-  url: 'https://rest.paycomet.com/v1/cards',
+  url: 'https://api.paycomet.com/gateway/jet_request.php',
   headers: {
     'Content-Type': 'application/json',
-    Accept: 'application/json',
-    'PAYCOMET-API-TOKEN': 'ec71b512cee67b7e65b38800bc3b1018e64a2b94'
+    Accept: 'application/json'
+    // 'PAYCOMET-API-TOKEN': 'ec71b512cee67b7e65b38800bc3b1018e64a2b94'
   },
-  data: {
-    terminal: 30810,
-    cvc2: '012',
-    jetToken: 'rApGWqLdH8ExOyNiLukyMMs78PZRzDm5',
-    expiryYear: '23',
-    expiryMonth: '11',
-    pan: 'eu consectetur',
-    order: 'PAY987654321',
-    productDescription: 'Random product',
-    language: 'es',
-    notify: 1
-  }
+  data: formData
 };
 
-// axios(config)
-//   .then(function (response) {
-//     console.log(JSON.stringify(response.data));
-//   })
-//   .catch(function (error) {
-//     console.log(error);
-//   });
+axios(config)
+  .then((response) => {
+    console.log(response.data);
+    axios({
+      method: 'POST',
+      url: 'https://rest.paycomet.com/v1/cards',
+      data: {
+        terminal: 30810,
+        jetToken: response.data.paytpvToken
+      },
+      headers: {
+        'Content-Type': 'application/json',
+        'PAYCOMET-API-TOKEN': 'ec71b512cee67b7e65b38800bc3b1018e64a2b94'
+      }
+    }).then(response => console.warn(response));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
